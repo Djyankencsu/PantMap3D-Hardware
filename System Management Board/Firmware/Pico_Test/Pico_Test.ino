@@ -17,6 +17,10 @@
 #define ADC_MUX 26
 #define JET_ON 15
 
+//The threshold for deciding if power is on
+//If voltage reading it greater, it is on, if less, off. 
+int threshold = 2048;
+
 bool American = true; 
 
 //Since there are several 3-bit interfaces, a dedicated structure
@@ -76,7 +80,8 @@ void toggle(int pin_to_toggle){
   digitalWrite(pin_to_toggle,!state);
 }
 
-void parser(int input_char){
+void parser(String input_string){
+  int input_char = (int)input_string[0];
   switch (input_char) {
     //"M" toggles the main relay
     case 77:
@@ -115,17 +120,23 @@ void parser(int input_char){
     case 66:
       toggle(LIGHT_B);
     break;
-    //"0" toggles out bit 0
-    case 30:
-      toggle(OUT0);
+    //"O" enables output pin control parsing expects 4 chars like "O001" MSB (2) to LSB (0)
+    case 79:
+      digitalWrite(OUT0,(int)input_string[3]);
+      digitalWrite(OUT1,(int)input_string[2]);
+      digitalWrite(OUT2,(int)input_string[1]);
     break;
-    //"1" toggles out bit 1
-    case 31:
-      toggle(OUT1);
+    //"I" enables input pin value reading
+    case 73:
+      char holder[3];
+      holder[0] = digitalRead(IN2);
+      holder[1] = digitalRead(IN1);
+      holder[2] = digitalRead(IN0);
+      Serial.println(holder);
     break;
-    //"2" toggles out bit 2
-    case 32:
-      toggle(OUT2);
+    //"K" runs shutdown procedure
+    case 75:
+      shutdown();
     break;
   }
 }
@@ -133,7 +144,6 @@ void parser(int input_char){
 void check_pow(){
   struct bits mux_selector = {0,0,1};
   int voltage = read_ADC_MUX(mux_selector);
-  int threshold = 2048; //an element in [0,4096]
   if (voltage >= threshold){
     digitalWrite(SWITCH_PWR_EN,1);
     delay(50);
@@ -212,10 +222,18 @@ void loop() {
 
   struct bits mux_selector;
   mux_selector = {0,0,1};
-  int voltage = read_ADC_MUX(mux_selector);
+  //Analog read is rather inefficient timewise, so only check power once every
+  //5 seconds. 
+  if ((millis() % 5000) <= 50){
+    int voltage = read_ADC_MUX(mux_selector);
+    delay(100);
+    if (voltage < threshold){
+      shutdown();
+    }
+  }
   if (Serial.available()>0){
-    int data = Serial.read();
+    String data = Serial.readStringUntil();
+    data.trim();
     parser(data); 
   }
-  shutdown();
 }
