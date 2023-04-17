@@ -57,24 +57,82 @@ float convt_temp(float temp){
   return temp;
 }
 
-int check_temp(){
-  struct bits temp_sensor1_mux = {1,1,0};
-  struct bits temp_sensor2_mux = {1,1,1};
-  float temp1 = (float)read_ADC_MUX(temp_sensor1_mux);
-  float temp2 = (float)read_ADC_MUX(temp_sensor2_mux);
-  temp1 = convt_temp(temp1);
-  temp2 = convt_temp(temp2);
-  float holder = [temp1,temp2];
-  return holder;
+int check_temp(int sensor){
+  struct bits temp_mux1 = {1,1,0};
+  struct bits temp_mux2 = {1,1,1};
+  float temp = 0.0;
+  if (sensor == 1){
+    temp = (float)read_ADC_MUX(temp_mux1);
+  }
+  else if (sensor == 2){
+    temp = (float)read_ADC_MUX(temp_mux2);
+  }
+  temp = convt_temp(temp);
+  return temp;
+}
+
+void toggle(int pin_to_toggle){
+  bool state = digitalRead(pin_to_toggle);
+  digitalWrite(pin_to_toggle,!state);
 }
 
 void parser(int input_char){
-  
+  switch (input_char) {
+    //"M" toggles the main relay
+    case 77:
+      toggle(MAIN_RELAY);
+    break;
+    case 83:
+      //"S" toggles the switch relay
+      toggle(SWITCH_PWR_EN);
+    break;
+    //"C" toggles the computer relay
+    case 67:
+      toggle(COMP_PWR_EN);
+    break;
+    //"J" toggles the Jetson on pin
+    case 74:
+      toggle(JET_ON);
+    break;
+    //"T" prints temperatures over serial
+    case 84:
+      Serial.println(check_temp(1));
+      Serial.println(check_temp(2));
+    break;
+    //"a" toggles LEDA
+    case 97:
+      toggle(LEDA);
+    break;
+    //"b" toggles LEDB
+    case 98:
+      toggle(LEDB);
+    break;
+    //"A" toggles LIGHT_A
+    case 65:
+      toggle(LIGHT_A);
+    break;
+    //"B" toggles LIGHT_B
+    case 66:
+      toggle(LIGHT_B);
+    break;
+    //"0" toggles out bit 0
+    case 30:
+      toggle(OUT0);
+    break;
+    //"1" toggles out bit 1
+    case 31:
+      toggle(OUT1);
+    break;
+    //"2" toggles out bit 2
+    case 32:
+      toggle(OUT2);
+    break;
+  }
 }
 
 void check_pow(){
-  struct bits mux_selector = {0,0,1]};
-  int voltage = Read_ADC_MUX(mux_selector);
+  struct bits mux_selector = {0,0,1};
+  int voltage = read_ADC_MUX(mux_selector);
   int threshold = 2048; //an element in [0,4096]
   if (voltage >= threshold){
     digitalWrite(SWITCH_PWR_EN,1);
@@ -133,8 +191,8 @@ void setup() {
     if (Serial.available()>0){
       int data = Serial.read();
       parser(data);
-      delay(1000);
     }
+    delay(1000);
   }
   digitalWrite(MAIN_RELAY,1);
   //Pi is in control
@@ -149,12 +207,15 @@ void loop() {
   //Input 11* Light A, 1*1 Light B, 01* LED A, 0*1 LED B
   digitalWrite(input_bits.S0 && input_bits.S1, LIGHT_A);
   digitalWrite(input_bits.S0 && input_bits.S2, LIGHT_B);
-  digitalWrite(!input_bits.S0&&input_bits.S1,LED_A);
-  digitalWrite(!input_bits.S0&&input_bits.S2,LED_B);
+  digitalWrite(!input_bits.S0&&input_bits.S1,LEDA);
+  digitalWrite(!input_bits.S0&&input_bits.S2,LEDB);
 
   struct bits mux_selector;
   mux_selector = {0,0,1};
   int voltage = read_ADC_MUX(mux_selector);
-
+  if (Serial.available()>0){
+    int data = Serial.read();
+    parser(data); 
+  }
   shutdown();
 }
