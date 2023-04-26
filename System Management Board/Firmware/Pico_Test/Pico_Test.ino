@@ -127,12 +127,13 @@ void parser(String input_string){
       digitalWrite(OUT2,(int)input_string[1]);
     break;
     //"I" enables input pin value reading
-    case 73:
-      char holder[3];
-      holder[0] = digitalRead(IN2);
-      holder[1] = digitalRead(IN1);
-      holder[2] = digitalRead(IN0);
+    case 73:{
+      String holder = "";
+      holder.concat(digitalRead(IN2));
+      holder.concat(digitalRead(IN1));
+      holder.concat(digitalRead(IN0));
       Serial.println(holder);
+    }
     break;
     //"K" runs shutdown procedure
     case 75:
@@ -199,7 +200,7 @@ void setup() {
   Serial.begin(115200);
   for (int i = 0; i<10;i++){
     if (Serial.available()>0){
-      int data = Serial.read();
+      String data = String(Serial.read());
       parser(data);
     }
     delay(1000);
@@ -232,7 +233,7 @@ void loop() {
     }
   }
   if (Serial.available()>0){
-    String data = Serial.readStringUntil();
+    String data = Serial.readStringUntil(10);
     data.trim();
     parser(data); 
   }
