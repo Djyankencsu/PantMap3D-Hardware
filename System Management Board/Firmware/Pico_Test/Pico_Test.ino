@@ -199,33 +199,38 @@ void setup() {
   digitalWrite(SWITCH_PWR_EN,0);
   Serial.begin(115200);
   for (int i = 0; i<10;i++){
+    delay(1000);
     if (Serial.available()>0){
       String data = String(Serial.read());
       parser(data);
     }
-    delay(1000);
   }
   digitalWrite(MAIN_RELAY,1);
   //Pi is in control
-  delay(10000);
+  for (int i = 0; i<10;i++){
+    delay(1000);
+    if (Serial.available()>0){
+      String data = String(Serial.read());
+      parser(data);
+    }
+  }
   check_pow();
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
-  struct bits input_bits;
-  input_bits = {digitalRead(IN0),digitalRead(IN1),digitalRead(IN2)};
-  //Input 11* Light A, 1*1 Light B, 01* LED A, 0*1 LED B
-  digitalWrite(input_bits.S0 && input_bits.S1, LIGHT_A);
-  digitalWrite(input_bits.S0 && input_bits.S2, LIGHT_B);
-  digitalWrite(!input_bits.S0&&input_bits.S1,LEDA);
-  digitalWrite(!input_bits.S0&&input_bits.S2,LEDB);
-
-  struct bits mux_selector;
-  mux_selector = {0,0,1};
   //Analog read is rather inefficient timewise, so only check power once every
   //5 seconds. 
   if ((millis() % 5000) <= 50){
+    struct bits input_bits;
+    input_bits = {digitalRead(IN0),digitalRead(IN1),digitalRead(IN2)};
+    //Input 11* Light A, 1*1 Light B, 01* LED A, 0*1 LED B
+    digitalWrite(input_bits.S0 && input_bits.S1, LIGHT_A);
+    digitalWrite(input_bits.S0 && input_bits.S2, LIGHT_B);
+    digitalWrite(!input_bits.S0&&input_bits.S1,LEDA);
+    digitalWrite(!input_bits.S0&&input_bits.S2,LEDB);
+    struct bits mux_selector;
+    mux_selector = {0,0,1};
     int voltage = read_ADC_MUX(mux_selector);
     delay(100);
     if (voltage < threshold){
