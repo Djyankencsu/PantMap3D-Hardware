@@ -61,7 +61,7 @@ float convt_temp(float temp){
   return temp;
 }
 
-int check_temp(int sensor){
+float check_temp(int sensor){
   struct bits temp_mux1 = {1,1,0};
   struct bits temp_mux2 = {1,1,1};
   float temp = 0.0;
@@ -122,9 +122,9 @@ void parser(String input_string){
     break;
     //"O" enables output pin control parsing expects 4 chars like "O001" MSB (2) to LSB (0)
     case 79:
-      digitalWrite(OUT0,(int)input_string[3]);
-      digitalWrite(OUT1,(int)input_string[2]);
-      digitalWrite(OUT2,(int)input_string[1]);
+      digitalWrite(OUT0,((int)input_string[3])-48);
+      digitalWrite(OUT1,((int)input_string[2])-48);
+      digitalWrite(OUT2,((int)input_string[1])-48);
     break;
     //"I" enables input pin value reading
     case 73:{
@@ -139,7 +139,15 @@ void parser(String input_string){
     case 75:
       shutdown();
     break;
+    //"V" reads voltage of input from ADC mux
+    case 86:
+    {
+      struct bits mux_selector = {0,0,1};
+      int voltage = read_ADC_MUX(mux_selector);
+      Serial.println(voltage);
+    }
   }
+  Serial.println("Done");
 }
 
 void check_pow(){
@@ -201,7 +209,8 @@ void setup() {
   for (int i = 0; i<10;i++){
     delay(1000);
     if (Serial.available()>0){
-      String data = String(Serial.read());
+      String data = Serial.readStringUntil(10);
+      data.trim();
       parser(data);
     }
   }
@@ -210,7 +219,8 @@ void setup() {
   for (int i = 0; i<10;i++){
     delay(1000);
     if (Serial.available()>0){
-      String data = String(Serial.read());
+      String data = Serial.readStringUntil(10);
+      data.trim();
       parser(data);
     }
   }
