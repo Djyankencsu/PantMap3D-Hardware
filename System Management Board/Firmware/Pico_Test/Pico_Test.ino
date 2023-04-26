@@ -4,8 +4,8 @@
 #define OUT0 12
 #define OUT1 27
 #define OUT2 28
-#define LEDA 21
-#define LEDB 22
+#define LEDA 22
+#define LEDB 21
 #define SWITCH_PWR_EN 0
 #define COMP_PWR_EN 1
 #define MAIN_RELAY 2
@@ -197,10 +197,10 @@ void setup() {
   digitalWrite(LIGHT_A,0);
   pinMode(LIGHT_B,OUTPUT);
   digitalWrite(LIGHT_B,0);
-  pinMode(LED1, OUTPUT);
-  digitalWrite(LED1,0);
-  pinMode(LED2, OUTPUT);
-  digitalWrite(LED2,0);
+  pinMode(LEDA, OUTPUT);
+  digitalWrite(LEDA,0);
+  pinMode(LEDB, OUTPUT);
+  digitalWrite(LEDB,0);
   pinMode(MAIN_RELAY, OUTPUT);
   digitalWrite(MAIN_RELAY,0);
   pinMode(SWITCH_PWR_EN, OUTPUT);
