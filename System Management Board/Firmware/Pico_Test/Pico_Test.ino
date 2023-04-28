@@ -17,17 +17,29 @@
 #define ADC_MUX 26
 #define JET_ON 15
 
+int COMP_PWR_STATE = 0;
+int MAIN_RELAY_STATE = 0;
+int LED_A_STATE = 0;
+int LED_B_STATE = 0;
+int LIGHT_A_STATE = 0;
+int LIGHT_B_STATE = 0;
+int JET_ON_STATE = 0;
+
 //The threshold for deciding if power is on
 //If voltage reading it greater, it is on, if less, off. 
-int threshold = 2048;
+int threshold = 100;
 
-bool American = true; 
+bool American = false; 
 
 //Since there are several 3-bit interfaces, a dedicated structure
 //seemed useful. 
 struct bits{
   int S2,S1,S0;
 };
+
+struct bits AUX_Voltage = {0,0,1};
+struct bits Temp_Sensor1 = {1,1,0};
+struct bits Temp_Sensor2 = {1,1,1};
 
 void set_mux(struct bits pins){
   delay(10);
@@ -40,7 +52,7 @@ void set_mux(struct bits pins){
 int read_ADC_MUX(struct bits pins){
   set_mux(pins);
   int data = analogRead(ADC_MUX);
-  set_mux({0,0,0});
+  //set_mux({0,0,0});
   return data;
 }
 
@@ -147,6 +159,8 @@ void parser(String input_string){
       Serial.println(voltage);
     }
   }
+  Serial.print((char)input_char);
+  Serial.print(" ");
   Serial.println("Done");
 }
 
@@ -226,7 +240,7 @@ void setup() {
       parser(data);
     }
   }
-  check_pow();
+  //check_pow();
 }
 
 void loop() {
@@ -246,7 +260,7 @@ void loop() {
     int voltage = read_ADC_MUX(mux_selector);
     delay(100);
     if (voltage < threshold){
-      shutdown();
+      //shutdown();
     }
   }
   if (Serial.available()>0){
