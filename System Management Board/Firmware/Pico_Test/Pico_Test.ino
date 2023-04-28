@@ -97,19 +97,23 @@ void parser(String input_string){
   switch (input_char) {
     //"M" toggles the main relay
     case 77:
-      toggle(MAIN_RELAY,MAIN_RELAY_STATE);
+      MAIN_RELAY_STATE = !MAIN_RELAY_STATE;
+      digitalWrite(MAIN_RELAY,MAIN_RELAY_STATE);
     break;
     case 83:
       //"S" toggles the switch relay
-      toggle(SWITCH_PWR_EN,SWITCH_PWR_STATE);
+      SWITCH_PWR_STATE = !SWITCH_PWR_STATE;
+      digitalWrite(SWITCH_PWR_EN,SWITCH_PWR_STATE);
     break;
     //"C" toggles the computer relay
     case 67:
-      toggle(COMP_PWR_EN,COMP_PWR_STATE);
+      COMP_PWR_STATE = !COMP_PWR_STATE;
+      digitalWrite(COMP_PWR_EN,COMP_PWR_STATE);
     break;
     //"J" toggles the Jetson on pin
     case 74:
-      toggle(JET_ON,JET_ON_STATE);
+      JET_ON_STATE = !JET_ON_STATE;
+      digitalWrite(JET_ON,JET_ON_STATE);
     break;
     //"T" prints temperatures over serial
     case 84:
@@ -118,19 +122,23 @@ void parser(String input_string){
     break;
     //"a" toggles LEDA
     case 97:
-      toggle(LEDA,LEDA_STATE);
+      LEDA_STATE = !LEDA_STATE;
+      digitalWrite(LEDA,LEDA_STATE);
     break;
     //"b" toggles LEDB
     case 98:
-      toggle(LEDB,LEDB_STATE);
+      LEDB_STATE = !LEDB_STATE;
+      digitalWrite(LEDB,LEDB_STATE);
     break;
     //"A" toggles LIGHT_A
     case 65:
-      toggle(LIGHT_A,LIGHT_A_STATE);
+      LIGHTA_STATE = !LIGHTA_STATE;
+      digitalWrite(LIGHTA,LIGHTA_STATE);
     break;
     //"B" toggles LIGHT_B
     case 66:
-      toggle(LIGHT_B,LIGHT_B_STATE);
+      LIGHTB_STATE = !LIGHTB_STATE;
+      digitalWrite(LIGHTB,LIGHTB_STATE);
     break;
     //"O" enables output pin control parsing expects 4 chars like "O001" MSB (2) to LSB (0)
     case 79:
