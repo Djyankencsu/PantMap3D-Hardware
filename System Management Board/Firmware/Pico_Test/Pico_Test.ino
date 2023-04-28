@@ -205,6 +205,8 @@ void setup() {
   digitalWrite(MAIN_RELAY,0);
   pinMode(SWITCH_PWR_EN, OUTPUT);
   digitalWrite(SWITCH_PWR_EN,0);
+  pinMode(COMP_PWR_EN, OUTPUT);
+  digitalWrite(COMP_PWR_EN, 0);
   Serial.begin(115200);
   for (int i = 0; i<10;i++){
     delay(1000);
