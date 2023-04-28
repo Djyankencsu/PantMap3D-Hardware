@@ -18,9 +18,10 @@
 #define JET_ON 15
 
 int COMP_PWR_STATE = 0;
+int SWITCH_PWR_STATE = 0;
 int MAIN_RELAY_STATE = 0;
-int LED_A_STATE = 0;
-int LED_B_STATE = 0;
+int LEDA_STATE = 0;
+int LEDB_STATE = 0;
 int LIGHT_A_STATE = 0;
 int LIGHT_B_STATE = 0;
 int JET_ON_STATE = 0;
@@ -87,8 +88,7 @@ float check_temp(int sensor){
   return temp;
 }
 
-void toggle(int pin_to_toggle){
-  bool state = digitalRead(pin_to_toggle);
+void toggle(int pin_to_toggle, bool state){
   digitalWrite(pin_to_toggle,!state);
 }
 
@@ -97,19 +97,19 @@ void parser(String input_string){
   switch (input_char) {
     //"M" toggles the main relay
     case 77:
-      toggle(MAIN_RELAY);
+      toggle(MAIN_RELAY,MAIN_RELAY_STATE);
     break;
     case 83:
       //"S" toggles the switch relay
-      toggle(SWITCH_PWR_EN);
+      toggle(SWITCH_PWR_EN,SWITCH_PWR_STATE);
     break;
     //"C" toggles the computer relay
     case 67:
-      toggle(COMP_PWR_EN);
+      toggle(COMP_PWR_EN,COMP_PWR_STATE);
     break;
     //"J" toggles the Jetson on pin
     case 74:
-      toggle(JET_ON);
+      toggle(JET_ON,JET_ON_STATE);
     break;
     //"T" prints temperatures over serial
     case 84:
@@ -118,19 +118,19 @@ void parser(String input_string){
     break;
     //"a" toggles LEDA
     case 97:
-      toggle(LEDA);
+      toggle(LEDA,LEDA_STATE);
     break;
     //"b" toggles LEDB
     case 98:
-      toggle(LEDB);
+      toggle(LEDB,LEDB_STATE);
     break;
     //"A" toggles LIGHT_A
     case 65:
-      toggle(LIGHT_A);
+      toggle(LIGHT_A,LIGHT_A_STATE);
     break;
     //"B" toggles LIGHT_B
     case 66:
-      toggle(LIGHT_B);
+      toggle(LIGHT_B,LIGHT_B_STATE);
     break;
     //"O" enables output pin control parsing expects 4 chars like "O001" MSB (2) to LSB (0)
     case 79:
