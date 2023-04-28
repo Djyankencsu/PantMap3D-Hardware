@@ -132,13 +132,13 @@ void parser(String input_string){
     break;
     //"A" toggles LIGHT_A
     case 65:
-      LIGHTA_STATE = !LIGHTA_STATE;
-      digitalWrite(LIGHTA,LIGHTA_STATE);
+      LIGHT_A_STATE = !LIGHT_A_STATE;
+      digitalWrite(LIGHT_A,LIGHT_A_STATE);
     break;
     //"B" toggles LIGHT_B
     case 66:
-      LIGHTB_STATE = !LIGHTB_STATE;
-      digitalWrite(LIGHTB,LIGHTB_STATE);
+      LIGHT_B_STATE = !LIGHT_B_STATE;
+      digitalWrite(LIGHT_B,LIGHT_B_STATE);
     break;
     //"O" enables output pin control parsing expects 4 chars like "O001" MSB (2) to LSB (0)
     case 79:
