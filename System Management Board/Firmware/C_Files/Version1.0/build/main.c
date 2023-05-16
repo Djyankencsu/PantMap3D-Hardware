@@ -1,3 +1,6 @@
+#include "pico/stdlib.h"
+#include "pico/binary_info.h"
+
 #define IN0 7
 #define IN1 10
 #define IN2 11
@@ -17,14 +20,22 @@
 #define ADC_MUX 26
 #define JET_ON 15
 #define BUILT_IN_LED 25
+#define mask 0xffffffe0
 
 int main(){
-    gpio_init(LED_PIN);
-    gpio_set_dir(LED_PIN, GPIO_OUT);
+    gpio_init(BUILT_IN_LED);
+    gpio_set_dir(BUILT_IN_LED, GPIO_OUT);
     while (1) {
-        gpio_put(LED_PIN, 0);
+        gpio_put(BUILT_IN_LED, 0);
         sleep_ms(500);
-        gpio_put(LED_PIN, 1);
+        gpio_put(BUILT_IN_LED, 1);
         sleep_ms(1000);
+        asm(
+            "BL state_enforce"
+        );
     }
+}
+
+void gpio_put_wrapper(int pin_state, int pin_number){
+    gpio_put(pin_number, pin_state);
 }

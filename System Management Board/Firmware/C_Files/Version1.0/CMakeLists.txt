@@ -13,6 +13,7 @@ include_directories(${CMAKE_SOURCE_DIR})
 
 add_executable(main
     main.c
+    functions.s
 )
 
 pico_add_extra_outputs(main)
