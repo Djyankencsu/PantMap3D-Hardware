@@ -1,4 +1,4 @@
-# Install script for directory: /home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_printf
+# Install script for directory: /home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_printf
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

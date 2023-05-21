@@ -1,4 +1,4 @@
-# Install script for directory: /home/daniel/PSA/Firmware_Project/pico-sdk/docs
+# Install script for directory: /home/daniel/PSA/Hardware/pico-sdk/docs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

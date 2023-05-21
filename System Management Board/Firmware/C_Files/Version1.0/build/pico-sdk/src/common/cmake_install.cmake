@@ -1,4 +1,4 @@
-# Install script for directory: /home/daniel/PSA/Firmware_Project/pico-sdk/src/common
+# Install script for directory: /home/daniel/PSA/Hardware/pico-sdk/src/common
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,17 +34,17 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/daniel/PSA/Firmware_Project/PantMap3D-Hardware/System Management Board/Firmware/C_Files/Version1.0/build/pico-sdk/src/common/boot_picoboot/cmake_install.cmake")
-  include("/home/daniel/PSA/Firmware_Project/PantMap3D-Hardware/System Management Board/Firmware/C_Files/Version1.0/build/pico-sdk/src/common/boot_uf2/cmake_install.cmake")
-  include("/home/daniel/PSA/Firmware_Project/PantMap3D-Hardware/System Management Board/Firmware/C_Files/Version1.0/build/pico-sdk/src/common/pico_base/cmake_install.cmake")
-  include("/home/daniel/PSA/Firmware_Project/PantMap3D-Hardware/System Management Board/Firmware/C_Files/Version1.0/build/pico-sdk/src/common/pico_usb_reset_interface/cmake_install.cmake")
-  include("/home/daniel/PSA/Firmware_Project/PantMap3D-Hardware/System Management Board/Firmware/C_Files/Version1.0/build/pico-sdk/src/common/pico_bit_ops/cmake_install.cmake")
-  include("/home/daniel/PSA/Firmware_Project/PantMap3D-Hardware/System Management Board/Firmware/C_Files/Version1.0/build/pico-sdk/src/common/pico_binary_info/cmake_install.cmake")
-  include("/home/daniel/PSA/Firmware_Project/PantMap3D-Hardware/System Management Board/Firmware/C_Files/Version1.0/build/pico-sdk/src/common/pico_divider/cmake_install.cmake")
-  include("/home/daniel/PSA/Firmware_Project/PantMap3D-Hardware/System Management Board/Firmware/C_Files/Version1.0/build/pico-sdk/src/common/pico_sync/cmake_install.cmake")
-  include("/home/daniel/PSA/Firmware_Project/PantMap3D-Hardware/System Management Board/Firmware/C_Files/Version1.0/build/pico-sdk/src/common/pico_time/cmake_install.cmake")
-  include("/home/daniel/PSA/Firmware_Project/PantMap3D-Hardware/System Management Board/Firmware/C_Files/Version1.0/build/pico-sdk/src/common/pico_util/cmake_install.cmake")
-  include("/home/daniel/PSA/Firmware_Project/PantMap3D-Hardware/System Management Board/Firmware/C_Files/Version1.0/build/pico-sdk/src/common/pico_stdlib/cmake_install.cmake")
+  include("/home/daniel/PSA/Hardware/PantMap3D-Hardware/System Management Board/Firmware/C_Files/Version1.0/build/pico-sdk/src/common/boot_picoboot/cmake_install.cmake")
+  include("/home/daniel/PSA/Hardware/PantMap3D-Hardware/System Management Board/Firmware/C_Files/Version1.0/build/pico-sdk/src/common/boot_uf2/cmake_install.cmake")
+  include("/home/daniel/PSA/Hardware/PantMap3D-Hardware/System Management Board/Firmware/C_Files/Version1.0/build/pico-sdk/src/common/pico_base/cmake_install.cmake")
+  include("/home/daniel/PSA/Hardware/PantMap3D-Hardware/System Management Board/Firmware/C_Files/Version1.0/build/pico-sdk/src/common/pico_usb_reset_interface/cmake_install.cmake")
+  include("/home/daniel/PSA/Hardware/PantMap3D-Hardware/System Management Board/Firmware/C_Files/Version1.0/build/pico-sdk/src/common/pico_bit_ops/cmake_install.cmake")
+  include("/home/daniel/PSA/Hardware/PantMap3D-Hardware/System Management Board/Firmware/C_Files/Version1.0/build/pico-sdk/src/common/pico_binary_info/cmake_install.cmake")
+  include("/home/daniel/PSA/Hardware/PantMap3D-Hardware/System Management Board/Firmware/C_Files/Version1.0/build/pico-sdk/src/common/pico_divider/cmake_install.cmake")
+  include("/home/daniel/PSA/Hardware/PantMap3D-Hardware/System Management Board/Firmware/C_Files/Version1.0/build/pico-sdk/src/common/pico_sync/cmake_install.cmake")
+  include("/home/daniel/PSA/Hardware/PantMap3D-Hardware/System Management Board/Firmware/C_Files/Version1.0/build/pico-sdk/src/common/pico_time/cmake_install.cmake")
+  include("/home/daniel/PSA/Hardware/PantMap3D-Hardware/System Management Board/Firmware/C_Files/Version1.0/build/pico-sdk/src/common/pico_util/cmake_install.cmake")
+  include("/home/daniel/PSA/Hardware/PantMap3D-Hardware/System Management Board/Firmware/C_Files/Version1.0/build/pico-sdk/src/common/pico_stdlib/cmake_install.cmake")
 
 endif()
 

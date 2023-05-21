@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/daniel/PSA/Firmware_Project/PantMap3D-Hardware/System Management Board/Firmware/C_Files/Version1.0"
+CMAKE_SOURCE_DIR = "/home/daniel/PSA/Hardware/PantMap3D-Hardware/System Management Board/Firmware/C_Files/Version1.0"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/daniel/PSA/Firmware_Project/PantMap3D-Hardware/System Management Board/Firmware/C_Files/Version1.0/build"
+CMAKE_BINARY_DIR = "/home/daniel/PSA/Hardware/PantMap3D-Hardware/System Management Board/Firmware/C_Files/Version1.0/build"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/daniel/PSA/Firmware_Project/PantMap3D-Hardware/System Management Board/Firmware/C_Files/Version1.0/build/CMakeFiles" "/home/daniel/PSA/Firmware_Project/PantMap3D-Hardware/System Management Board/Firmware/C_Files/Version1.0/build/CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/daniel/PSA/Hardware/PantMap3D-Hardware/System Management Board/Firmware/C_Files/Version1.0/build/CMakeFiles" "/home/daniel/PSA/Hardware/PantMap3D-Hardware/System Management Board/Firmware/C_Files/Version1.0/build/CMakeFiles/progress.marks"
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/daniel/PSA/Firmware_Project/PantMap3D-Hardware/System Management Board/Firmware/C_Files/Version1.0/build/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/daniel/PSA/Hardware/PantMap3D-Hardware/System Management Board/Firmware/C_Files/Version1.0/build/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -175,1031 +175,1669 @@ bs2_default/fast:
 	$(MAKE) -f pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/build.make pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/build
 .PHONY : bs2_default/fast
 
-functions.obj: functions.s.obj
+#=============================================================================
+# Target rules for targets named PioasmBuild
 
-.PHONY : functions.obj
+# Build rule for target.
+PioasmBuild: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 PioasmBuild
+.PHONY : PioasmBuild
+
+# fast build rule for target.
+PioasmBuild/fast:
+	$(MAKE) -f pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/PioasmBuild.dir/build.make pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/PioasmBuild.dir/build
+.PHONY : PioasmBuild/fast
+
+#=============================================================================
+# Target rules for targets named cyw43_driver_picow_cyw43_bus_pio_spi_pio_h
+
+# Build rule for target.
+cyw43_driver_picow_cyw43_bus_pio_spi_pio_h: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 cyw43_driver_picow_cyw43_bus_pio_spi_pio_h
+.PHONY : cyw43_driver_picow_cyw43_bus_pio_spi_pio_h
+
+# fast build rule for target.
+cyw43_driver_picow_cyw43_bus_pio_spi_pio_h/fast:
+	$(MAKE) -f pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/build.make pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/build
+.PHONY : cyw43_driver_picow_cyw43_bus_pio_spi_pio_h/fast
+
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj: home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj
 
 # target to build an object file
-functions.s.obj:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/functions.s.obj
-.PHONY : functions.s.obj
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/critical_section.obj: home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/critical_section.c.obj
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i: home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/critical_section.obj
-
-# target to build an object file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/critical_section.c.obj:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/critical_section.c.obj
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/critical_section.c.obj
-
-home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/critical_section.i: home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/critical_section.c.i
-
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/critical_section.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i
 
 # target to preprocess a source file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/critical_section.c.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/critical_section.c.i
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/critical_section.c.i
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/critical_section.s: home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/critical_section.c.s
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s: home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/critical_section.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s
 
 # target to generate assembly for a file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/critical_section.c.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/critical_section.c.s
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/critical_section.c.s
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/lock_core.obj: home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/lock_core.c.obj
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.obj: home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/lock_core.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.obj
 
 # target to build an object file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/lock_core.c.obj:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/lock_core.c.obj
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/lock_core.c.obj
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/lock_core.i: home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/lock_core.c.i
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.i: home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/lock_core.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.i
 
 # target to preprocess a source file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/lock_core.c.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/lock_core.c.i
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/lock_core.c.i
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/lock_core.s: home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/lock_core.c.s
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.s: home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/lock_core.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.s
 
 # target to generate assembly for a file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/lock_core.c.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/lock_core.c.s
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/lock_core.c.s
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/mutex.obj: home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/mutex.c.obj
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.obj: home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/mutex.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.obj
 
 # target to build an object file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/mutex.c.obj:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/mutex.c.obj
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/mutex.c.obj
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/mutex.i: home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/mutex.c.i
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.i: home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/mutex.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.i
 
 # target to preprocess a source file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/mutex.c.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/mutex.c.i
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/mutex.c.i
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/mutex.s: home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/mutex.c.s
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.s: home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/mutex.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.s
 
 # target to generate assembly for a file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/mutex.c.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/mutex.c.s
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/mutex.c.s
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/sem.obj: home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/sem.c.obj
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.obj: home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/sem.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.obj
 
 # target to build an object file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/sem.c.obj:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/sem.c.obj
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/sem.c.obj
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/sem.i: home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/sem.c.i
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.i: home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/sem.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.i
 
 # target to preprocess a source file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/sem.c.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/sem.c.i
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/sem.c.i
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/sem.s: home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/sem.c.s
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.s: home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/sem.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.s
 
 # target to generate assembly for a file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/sem.c.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/sem.c.s
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/sem.c.s
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_time/time.obj: home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_time/time.c.obj
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/hid/hid_device.obj: home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_time/time.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/hid/hid_device.obj
 
 # target to build an object file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_time/time.c.obj:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_time/time.c.obj
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_time/time.c.obj
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_time/time.i: home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_time/time.c.i
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/hid/hid_device.i: home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_time/time.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/hid/hid_device.i
 
 # target to preprocess a source file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_time/time.c.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_time/time.c.i
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_time/time.c.i
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_time/time.s: home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_time/time.c.s
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/hid/hid_device.s: home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_time/time.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/hid/hid_device.s
 
 # target to generate assembly for a file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_time/time.c.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_time/time.c.s
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_time/time.c.s
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_time/timeout_helper.obj: home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_time/timeout_helper.c.obj
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/midi/midi_device.obj: home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_time/timeout_helper.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/midi/midi_device.obj
 
 # target to build an object file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_time/timeout_helper.c.obj:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_time/timeout_helper.c.obj
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_time/timeout_helper.c.obj
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_time/timeout_helper.i: home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_time/timeout_helper.c.i
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/midi/midi_device.i: home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_time/timeout_helper.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/midi/midi_device.i
 
 # target to preprocess a source file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_time/timeout_helper.c.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_time/timeout_helper.c.i
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_time/timeout_helper.c.i
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_time/timeout_helper.s: home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_time/timeout_helper.c.s
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/midi/midi_device.s: home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_time/timeout_helper.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/midi/midi_device.s
 
 # target to generate assembly for a file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_time/timeout_helper.c.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_time/timeout_helper.c.s
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_time/timeout_helper.c.s
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_util/datetime.obj: home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_util/datetime.c.obj
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/msc/msc_device.obj: home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_util/datetime.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/msc/msc_device.obj
 
 # target to build an object file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_util/datetime.c.obj:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_util/datetime.c.obj
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_util/datetime.c.obj
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_util/datetime.i: home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_util/datetime.c.i
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/msc/msc_device.i: home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_util/datetime.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/msc/msc_device.i
 
 # target to preprocess a source file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_util/datetime.c.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_util/datetime.c.i
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_util/datetime.c.i
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_util/datetime.s: home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_util/datetime.c.s
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/msc/msc_device.s: home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_util/datetime.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/msc/msc_device.s
 
 # target to generate assembly for a file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_util/datetime.c.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_util/datetime.c.s
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_util/datetime.c.s
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_util/pheap.obj: home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_util/pheap.c.obj
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.obj: home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_util/pheap.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.obj
 
 # target to build an object file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_util/pheap.c.obj:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_util/pheap.c.obj
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_util/pheap.c.obj
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_util/pheap.i: home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_util/pheap.c.i
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.i: home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_util/pheap.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.i
 
 # target to preprocess a source file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_util/pheap.c.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_util/pheap.c.i
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_util/pheap.c.i
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_util/pheap.s: home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_util/pheap.c.s
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.s: home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_util/pheap.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.s
 
 # target to generate assembly for a file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_util/pheap.c.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_util/pheap.c.s
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_util/pheap.c.s
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_util/queue.obj: home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_util/queue.c.obj
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/net/ncm_device.obj: home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_util/queue.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/net/ncm_device.obj
 
 # target to build an object file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_util/queue.c.obj:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_util/queue.c.obj
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_util/queue.c.obj
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_util/queue.i: home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_util/queue.c.i
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/net/ncm_device.i: home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_util/queue.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/net/ncm_device.i
 
 # target to preprocess a source file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_util/queue.c.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_util/queue.c.i
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_util/queue.c.i
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_util/queue.s: home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_util/queue.c.s
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/net/ncm_device.s: home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_util/queue.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/net/ncm_device.s
 
 # target to generate assembly for a file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_util/queue.c.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_util/queue.c.s
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_util/queue.c.s
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_claim/claim.obj: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.obj: home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_claim/claim.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.obj
 
 # target to build an object file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_claim/claim.i: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.i: home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_claim/claim.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.i
 
 # target to preprocess a source file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_claim/claim.c.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_claim/claim.s: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.s: home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_claim/claim.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.s
 
 # target to generate assembly for a file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_claim/claim.c.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_clocks/clocks.obj: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.obj: home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_clocks/clocks.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.obj
 
 # target to build an object file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_clocks/clocks.i: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.i: home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_clocks/clocks.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.i
 
 # target to preprocess a source file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_clocks/clocks.s: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.s: home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_clocks/clocks.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.s
 
 # target to generate assembly for a file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_divider/divider.obj: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/video/video_device.obj: home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_divider/divider.obj
-
-# target to build an object file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
-
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/video/video_device.obj
 
 # target to build an object file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_gpio/gpio.i: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/video/video_device.i: home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_gpio/gpio.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/video/video_device.i
 
 # target to preprocess a source file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_gpio/gpio.s: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/video/video_device.s: home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_gpio/gpio.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/video/video_device.s
 
 # target to generate assembly for a file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_irq/irq.obj: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/common/tusb_fifo.obj: home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_irq/irq.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/common/tusb_fifo.obj
 
 # target to build an object file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_irq/irq.i: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/common/tusb_fifo.i: home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_irq/irq.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/common/tusb_fifo.i
 
 # target to preprocess a source file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_irq/irq.c.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_irq/irq.s: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/common/tusb_fifo.s: home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_irq/irq.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/common/tusb_fifo.s
 
 # target to generate assembly for a file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_irq/irq.c.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.obj: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd.obj: home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.obj
-
-# target to build an object file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
-
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_pll/pll.obj: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
-
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_pll/pll.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd.obj
 
 # target to build an object file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd.c.obj:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_pll/pll.i: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd.i: home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd.c.i
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_pll/pll.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd.i
 
 # target to preprocess a source file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_pll/pll.c.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd.c.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd.c.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd.c.i
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_pll/pll.s: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd.s: home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd.c.s
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_pll/pll.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd.s
 
 # target to generate assembly for a file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_pll/pll.c.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd.c.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd.c.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd.c.s
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_sync/sync.obj: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd_control.obj: home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_sync/sync.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd_control.obj
 
 # target to build an object file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_sync/sync.i: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd_control.i: home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_sync/sync.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd_control.i
 
 # target to preprocess a source file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_sync/sync.c.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_sync/sync.s: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd_control.s: home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_sync/sync.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd_control.s
 
 # target to generate assembly for a file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_sync/sync.c.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_timer/timer.obj: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.obj: home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_timer/timer.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.obj
 
 # target to build an object file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_timer/timer.i: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.i: home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_timer/timer.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.i
 
 # target to preprocess a source file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_timer/timer.c.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_timer/timer.s: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.s: home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_timer/timer.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.s
 
 # target to generate assembly for a file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_timer/timer.c.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_uart/uart.obj: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.obj: home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_uart/uart.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.obj
 
 # target to build an object file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_uart/uart.i: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.i: home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_uart/uart.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.i
 
 # target to preprocess a source file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_uart/uart.c.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_uart/uart.s: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.s: home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_uart/uart.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.s
 
 # target to generate assembly for a file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_uart/uart.c.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_vreg/vreg.obj: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/tusb.obj: home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/tusb.c.obj
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_vreg/vreg.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/tusb.obj
 
 # target to build an object file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/tusb.c.obj:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/tusb.c.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/tusb.c.obj
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_vreg/vreg.i: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/tusb.i: home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/tusb.c.i
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_vreg/vreg.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/tusb.i
 
 # target to preprocess a source file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/tusb.c.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/tusb.c.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/tusb.c.i
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_vreg/vreg.s: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/tusb.s: home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/tusb.c.s
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_vreg/vreg.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/tusb.s
 
 # target to generate assembly for a file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
+home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/tusb.c.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/tusb.c.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/tusb.c.s
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.obj: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/critical_section.obj: home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/critical_section.c.obj
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/critical_section.obj
 
 # target to build an object file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/critical_section.c.obj:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/critical_section.c.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/critical_section.c.obj
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
+home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/critical_section.i: home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/critical_section.c.i
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/critical_section.i
 
 # target to preprocess a source file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
+home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/critical_section.c.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/critical_section.c.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/critical_section.c.i
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
+home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/critical_section.s: home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/critical_section.c.s
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/critical_section.s
 
 # target to generate assembly for a file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
+home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/critical_section.c.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/critical_section.c.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/critical_section.c.s
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_xosc/xosc.obj: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/lock_core.obj: home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/lock_core.c.obj
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_xosc/xosc.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/lock_core.obj
 
 # target to build an object file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/lock_core.c.obj:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/lock_core.c.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/lock_core.c.obj
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_xosc/xosc.i: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
+home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/lock_core.i: home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/lock_core.c.i
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_xosc/xosc.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/lock_core.i
 
 # target to preprocess a source file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
+home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/lock_core.c.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/lock_core.c.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/lock_core.c.i
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_xosc/xosc.s: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
+home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/lock_core.s: home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/lock_core.c.s
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_xosc/xosc.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/lock_core.s
 
 # target to generate assembly for a file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
+home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/lock_core.c.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/lock_core.c.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/lock_core.c.s
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.obj: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/mutex.obj: home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/mutex.c.obj
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.obj
-
-# target to build an object file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
-
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_bootrom/bootrom.obj: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_bootrom/bootrom.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/mutex.obj
 
 # target to build an object file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/mutex.c.obj:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/mutex.c.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/mutex.c.obj
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
+home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/mutex.i: home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/mutex.c.i
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/mutex.i
 
 # target to preprocess a source file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
+home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/mutex.c.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/mutex.c.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/mutex.c.i
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
+home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/mutex.s: home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/mutex.c.s
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/mutex.s
 
 # target to generate assembly for a file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
+home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/mutex.c.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/mutex.c.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/mutex.c.s
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_divider/divider.obj: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/sem.obj: home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/sem.c.obj
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_divider/divider.obj
-
-# target to build an object file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_divider/divider.S.obj:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_double/double_aeabi.obj: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_double/double_aeabi.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/sem.obj
 
 # target to build an object file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/sem.c.obj:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/sem.c.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/sem.c.obj
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_double/double_init_rom.obj: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/sem.i: home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/sem.c.i
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_double/double_init_rom.obj
-
-# target to build an object file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
-
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_double/double_init_rom.i: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
-
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_double/double_init_rom.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/sem.i
 
 # target to preprocess a source file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
+home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/sem.c.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/sem.c.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/sem.c.i
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_double/double_init_rom.s: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
+home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/sem.s: home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/sem.c.s
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_double/double_init_rom.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/sem.s
 
 # target to generate assembly for a file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
+home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/sem.c.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/sem.c.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/sem.c.s
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_double/double_math.obj: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
+home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/time.obj: home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/time.c.obj
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_double/double_math.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/time.obj
 
 # target to build an object file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_double/double_math.c.obj:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
+home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/time.c.obj:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/time.c.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/time.c.obj
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_double/double_math.i: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_double/double_math.c.i
+home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/time.i: home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/time.c.i
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_double/double_math.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/time.i
 
 # target to preprocess a source file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_double/double_math.c.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_double/double_math.c.i
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_double/double_math.c.i
+home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/time.c.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/time.c.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/time.c.i
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_double/double_math.s: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_double/double_math.c.s
+home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/time.s: home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/time.c.s
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_double/double_math.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/time.s
 
 # target to generate assembly for a file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_double/double_math.c.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_double/double_math.c.s
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_double/double_math.c.s
+home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/time.c.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/time.c.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/time.c.s
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.obj: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/timeout_helper.obj: home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/timeout_helper.c.obj
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.obj
-
-# target to build an object file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_float/float_aeabi.obj: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
-
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_float/float_aeabi.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/timeout_helper.obj
 
 # target to build an object file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/timeout_helper.c.obj:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/timeout_helper.c.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/timeout_helper.c.obj
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_float/float_init_rom.obj: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/timeout_helper.i: home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/timeout_helper.c.i
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_float/float_init_rom.obj
-
-# target to build an object file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
-
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_float/float_init_rom.i: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
-
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_float/float_init_rom.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/timeout_helper.i
 
 # target to preprocess a source file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
+home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/timeout_helper.c.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/timeout_helper.c.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/timeout_helper.c.i
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_float/float_init_rom.s: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
+home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/timeout_helper.s: home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/timeout_helper.c.s
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_float/float_init_rom.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/timeout_helper.s
 
 # target to generate assembly for a file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
+home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/timeout_helper.c.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/timeout_helper.c.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/timeout_helper.c.s
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_float/float_math.obj: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
+home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/datetime.obj: home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/datetime.c.obj
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_float/float_math.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/datetime.obj
 
 # target to build an object file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_float/float_math.c.obj:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
+home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/datetime.c.obj:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/datetime.c.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/datetime.c.obj
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_float/float_math.i: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_float/float_math.c.i
+home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/datetime.i: home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/datetime.c.i
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_float/float_math.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/datetime.i
 
 # target to preprocess a source file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_float/float_math.c.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_float/float_math.c.i
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_float/float_math.c.i
+home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/datetime.c.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/datetime.c.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/datetime.c.i
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_float/float_math.s: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_float/float_math.c.s
+home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/datetime.s: home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/datetime.c.s
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_float/float_math.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/datetime.s
 
 # target to generate assembly for a file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_float/float_math.c.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_float/float_math.c.s
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_float/float_math.c.s
+home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/datetime.c.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/datetime.c.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/datetime.c.s
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.obj: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/pheap.obj: home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/pheap.c.obj
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.obj
-
-# target to build an object file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
-
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.obj: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
-
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/pheap.obj
 
 # target to build an object file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/pheap.c.obj:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/pheap.c.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/pheap.c.obj
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.obj: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
+home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/pheap.i: home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/pheap.c.i
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.obj
-
-# target to build an object file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
-
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.i: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
-
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/pheap.i
 
 # target to preprocess a source file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
+home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/pheap.c.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/pheap.c.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/pheap.c.i
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.s: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
+home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/pheap.s: home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/pheap.c.s
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/pheap.s
 
 # target to generate assembly for a file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
+home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/pheap.c.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/pheap.c.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/pheap.c.s
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.obj: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/queue.obj: home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/queue.c.obj
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.obj
-
-# target to build an object file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_platform/platform.obj: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
-
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_platform/platform.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/queue.obj
 
 # target to build an object file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_platform/platform.c.obj:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/queue.c.obj:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/queue.c.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/queue.c.obj
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_platform/platform.i: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_platform/platform.c.i
+home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/queue.i: home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/queue.c.i
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_platform/platform.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/queue.i
 
 # target to preprocess a source file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_platform/platform.c.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_platform/platform.c.i
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_platform/platform.c.i
+home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/queue.c.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/queue.c.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/queue.c.i
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_platform/platform.s: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_platform/platform.c.s
+home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/queue.s: home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/queue.c.s
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_platform/platform.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/queue.s
 
 # target to generate assembly for a file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_platform/platform.c.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_platform/platform.c.s
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_platform/platform.c.s
+home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/queue.c.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/queue.c.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/queue.c.s
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_printf/printf.obj: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_claim/claim.obj: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_printf/printf.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_claim/claim.obj
 
 # target to build an object file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_printf/printf.c.obj:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_printf/printf.i: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_printf/printf.c.i
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_claim/claim.i: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_printf/printf.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_claim/claim.i
 
 # target to preprocess a source file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_printf/printf.c.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_printf/printf.c.i
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_printf/printf.c.i
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_claim/claim.c.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_printf/printf.s: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_printf/printf.c.s
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_claim/claim.s: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_printf/printf.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_claim/claim.s
 
 # target to generate assembly for a file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_printf/printf.c.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_printf/printf.c.s
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_printf/printf.c.s
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_claim/claim.c.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_runtime/runtime.obj: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_clocks/clocks.obj: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_runtime/runtime.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_clocks/clocks.obj
 
 # target to build an object file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_runtime/runtime.i: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_clocks/clocks.i: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_runtime/runtime.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_clocks/clocks.i
 
 # target to preprocess a source file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_runtime/runtime.s: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_clocks/clocks.s: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_runtime/runtime.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_clocks/clocks.s
 
 # target to generate assembly for a file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_standard_link/binary_info.obj: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_divider/divider.obj: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_standard_link/binary_info.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_divider/divider.obj
 
 # target to build an object file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_standard_link/binary_info.i: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_flash/flash.obj: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_standard_link/binary_info.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_flash/flash.obj
+
+# target to build an object file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_flash/flash.i: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_flash/flash.i
 
 # target to preprocess a source file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_flash/flash.c.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_standard_link/binary_info.s: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_flash/flash.s: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_standard_link/binary_info.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_flash/flash.s
 
 # target to generate assembly for a file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_flash/flash.c.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_standard_link/crt0.obj: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_standard_link/crt0.obj
-
-# target to build an object file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
-
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_standard_link/new_delete.obj: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
-
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_standard_link/new_delete.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj
 
 # target to build an object file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_standard_link/new_delete.i: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_gpio/gpio.i: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_standard_link/new_delete.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_gpio/gpio.i
 
 # target to preprocess a source file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_standard_link/new_delete.s: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_gpio/gpio.s: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_standard_link/new_delete.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_gpio/gpio.s
 
 # target to generate assembly for a file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_stdio/stdio.obj: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_irq/irq.obj: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_stdio/stdio.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_irq/irq.obj
 
 # target to build an object file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_stdio/stdio.i: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_irq/irq.i: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_stdio/stdio.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_irq/irq.i
 
 # target to preprocess a source file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_irq/irq.c.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_stdio/stdio.s: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_irq/irq.s: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_stdio/stdio.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_irq/irq.s
 
 # target to generate assembly for a file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_irq/irq.c.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.obj: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.obj: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.obj
 
 # target to build an object file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_pll/pll.obj: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i
-
-# target to preprocess a source file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
-
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
-
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s
-
-# target to generate assembly for a file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
-
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
-
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_pll/pll.obj
 
 # target to build an object file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_pll/pll.i: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_pll/pll.i
 
 # target to preprocess a source file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_pll/pll.c.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s: home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_pll/pll.s: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_pll/pll.s
 
 # target to generate assembly for a file
-home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
-.PHONY : home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_pll/pll.c.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_sync/sync.obj: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_sync/sync.obj
+
+# target to build an object file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_sync/sync.i: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_sync/sync.i
+
+# target to preprocess a source file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_sync/sync.c.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_sync/sync.s: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_sync/sync.s
+
+# target to generate assembly for a file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_sync/sync.c.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_timer/timer.obj: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_timer/timer.obj
+
+# target to build an object file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_timer/timer.i: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_timer/timer.i
+
+# target to preprocess a source file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_timer/timer.c.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_timer/timer.s: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_timer/timer.s
+
+# target to generate assembly for a file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_timer/timer.c.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_uart/uart.obj: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_uart/uart.obj
+
+# target to build an object file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_uart/uart.i: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_uart/uart.i
+
+# target to preprocess a source file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_uart/uart.c.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_uart/uart.s: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_uart/uart.s
+
+# target to generate assembly for a file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_uart/uart.c.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_vreg/vreg.obj: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_vreg/vreg.obj
+
+# target to build an object file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_vreg/vreg.i: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_vreg/vreg.i
+
+# target to preprocess a source file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_vreg/vreg.s: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_vreg/vreg.s
+
+# target to generate assembly for a file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.obj: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.obj
+
+# target to build an object file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i
+
+# target to preprocess a source file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s
+
+# target to generate assembly for a file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_xosc/xosc.obj: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_xosc/xosc.obj
+
+# target to build an object file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_xosc/xosc.i: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_xosc/xosc.i
+
+# target to preprocess a source file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_xosc/xosc.s: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_xosc/xosc.s
+
+# target to generate assembly for a file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.obj: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.obj
+
+# target to build an object file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_bootrom/bootrom.obj: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_bootrom/bootrom.obj
+
+# target to build an object file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i
+
+# target to preprocess a source file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s
+
+# target to generate assembly for a file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_divider/divider.obj: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_divider/divider.obj
+
+# target to build an object file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_divider/divider.S.obj:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_aeabi.obj: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_aeabi.obj
+
+# target to build an object file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_init_rom.obj: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_init_rom.obj
+
+# target to build an object file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_init_rom.i: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_init_rom.i
+
+# target to preprocess a source file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_init_rom.s: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_init_rom.s
+
+# target to generate assembly for a file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_math.obj: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_math.obj
+
+# target to build an object file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_math.c.obj:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_math.i: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_math.c.i
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_math.i
+
+# target to preprocess a source file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_math.c.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_math.c.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_math.c.i
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_math.s: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_math.c.s
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_math.s
+
+# target to generate assembly for a file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_math.c.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_math.c.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_math.c.s
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.obj: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.obj
+
+# target to build an object file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.obj: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.obj
+
+# target to build an object file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.i: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.i
+
+# target to preprocess a source file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.s: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.s
+
+# target to generate assembly for a file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_float/float_aeabi.obj: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_float/float_aeabi.obj
+
+# target to build an object file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_float/float_init_rom.obj: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_float/float_init_rom.obj
+
+# target to build an object file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_float/float_init_rom.i: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_float/float_init_rom.i
+
+# target to preprocess a source file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_float/float_init_rom.s: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_float/float_init_rom.s
+
+# target to generate assembly for a file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_float/float_math.obj: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_float/float_math.obj
+
+# target to build an object file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_float/float_math.c.obj:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_float/float_math.i: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_float/float_math.c.i
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_float/float_math.i
+
+# target to preprocess a source file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_float/float_math.c.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_float/float_math.c.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_float/float_math.c.i
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_float/float_math.s: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_float/float_math.c.s
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_float/float_math.s
+
+# target to generate assembly for a file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_float/float_math.c.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_float/float_math.c.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_float/float_math.c.s
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.obj: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.obj
+
+# target to build an object file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.obj: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.obj
+
+# target to build an object file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.obj: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.obj
+
+# target to build an object file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.i: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.i
+
+# target to preprocess a source file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.s: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.s
+
+# target to generate assembly for a file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.obj: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.obj
+
+# target to build an object file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_platform/platform.obj: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_platform/platform.obj
+
+# target to build an object file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_platform/platform.c.obj:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_platform/platform.i: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_platform/platform.c.i
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_platform/platform.i
+
+# target to preprocess a source file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_platform/platform.c.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_platform/platform.c.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_platform/platform.c.i
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_platform/platform.s: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_platform/platform.c.s
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_platform/platform.s
+
+# target to generate assembly for a file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_platform/platform.c.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_platform/platform.c.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_platform/platform.c.s
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_printf/printf.obj: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_printf/printf.obj
+
+# target to build an object file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_printf/printf.c.obj:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_printf/printf.i: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_printf/printf.c.i
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_printf/printf.i
+
+# target to preprocess a source file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_printf/printf.c.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_printf/printf.c.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_printf/printf.c.i
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_printf/printf.s: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_printf/printf.c.s
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_printf/printf.s
+
+# target to generate assembly for a file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_printf/printf.c.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_printf/printf.c.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_printf/printf.c.s
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_runtime/runtime.obj: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_runtime/runtime.obj
+
+# target to build an object file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_runtime/runtime.i: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_runtime/runtime.i
+
+# target to preprocess a source file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_runtime/runtime.s: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_runtime/runtime.s
+
+# target to generate assembly for a file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_standard_link/binary_info.obj: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_standard_link/binary_info.obj
+
+# target to build an object file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_standard_link/binary_info.i: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_standard_link/binary_info.i
+
+# target to preprocess a source file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_standard_link/binary_info.s: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_standard_link/binary_info.s
+
+# target to generate assembly for a file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_standard_link/crt0.obj: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_standard_link/crt0.obj
+
+# target to build an object file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_standard_link/new_delete.obj: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_standard_link/new_delete.obj
+
+# target to build an object file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_standard_link/new_delete.i: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_standard_link/new_delete.i
+
+# target to preprocess a source file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_standard_link/new_delete.s: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_standard_link/new_delete.s
+
+# target to generate assembly for a file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio/stdio.obj: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio/stdio.obj
+
+# target to build an object file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio/stdio.i: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio/stdio.i
+
+# target to preprocess a source file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio/stdio.s: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio/stdio.s
+
+# target to generate assembly for a file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.obj: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.obj
+
+# target to build an object file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.i: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.i
+
+# target to preprocess a source file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.s: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.s
+
+# target to generate assembly for a file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.obj: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.obj
+
+# target to build an object file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.i: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.i
+
+# target to preprocess a source file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.s: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.s
+
+# target to generate assembly for a file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.obj: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.obj
+
+# target to build an object file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.i: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.i
+
+# target to preprocess a source file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.s: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.s
+
+# target to generate assembly for a file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj
+
+# target to build an object file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i
+
+# target to preprocess a source file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s
+
+# target to generate assembly for a file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_unique_id/unique_id.obj: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_unique_id/unique_id.obj
+
+# target to build an object file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i
+
+# target to preprocess a source file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
+
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s: home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
+
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s
+
+# target to generate assembly for a file
+home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
+.PHONY : home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
 
 main.obj: main.c.obj
 
@@ -1241,120 +1879,190 @@ help:
 	@echo "... bs2_default_padded_checksummed_asm"
 	@echo "... bs2_default_bin"
 	@echo "... bs2_default"
-	@echo "... functions.obj"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/critical_section.obj"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/critical_section.i"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/critical_section.s"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/lock_core.obj"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/lock_core.i"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/lock_core.s"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/mutex.obj"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/mutex.i"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/mutex.s"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/sem.obj"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/sem.i"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_sync/sem.s"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_time/time.obj"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_time/time.i"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_time/time.s"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_time/timeout_helper.obj"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_time/timeout_helper.i"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_time/timeout_helper.s"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_util/datetime.obj"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_util/datetime.i"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_util/datetime.s"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_util/pheap.obj"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_util/pheap.i"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_util/pheap.s"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_util/queue.obj"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_util/queue.i"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/common/pico_util/queue.s"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_claim/claim.obj"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_claim/claim.i"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_claim/claim.s"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_clocks/clocks.obj"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_clocks/clocks.i"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_clocks/clocks.s"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_divider/divider.obj"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_gpio/gpio.i"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_gpio/gpio.s"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_irq/irq.obj"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_irq/irq.i"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_irq/irq.s"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.obj"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_pll/pll.obj"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_pll/pll.i"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_pll/pll.s"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_sync/sync.obj"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_sync/sync.i"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_sync/sync.s"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_timer/timer.obj"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_timer/timer.i"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_timer/timer.s"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_uart/uart.obj"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_uart/uart.i"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_uart/uart.s"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_vreg/vreg.obj"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_vreg/vreg.i"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_vreg/vreg.s"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.obj"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_xosc/xosc.obj"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_xosc/xosc.i"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/hardware_xosc/xosc.s"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.obj"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_bootrom/bootrom.obj"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_divider/divider.obj"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_double/double_aeabi.obj"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_double/double_init_rom.obj"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_double/double_init_rom.i"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_double/double_init_rom.s"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_double/double_math.obj"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_double/double_math.i"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_double/double_math.s"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.obj"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_float/float_aeabi.obj"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_float/float_init_rom.obj"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_float/float_init_rom.i"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_float/float_init_rom.s"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_float/float_math.obj"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_float/float_math.i"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_float/float_math.s"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.obj"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.obj"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.obj"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.i"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.s"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.obj"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_platform/platform.obj"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_platform/platform.i"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_platform/platform.s"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_printf/printf.obj"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_printf/printf.i"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_printf/printf.s"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_runtime/runtime.obj"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_runtime/runtime.i"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_runtime/runtime.s"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_standard_link/binary_info.obj"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_standard_link/binary_info.i"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_standard_link/binary_info.s"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_standard_link/crt0.obj"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_standard_link/new_delete.obj"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_standard_link/new_delete.i"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_standard_link/new_delete.s"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_stdio/stdio.obj"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_stdio/stdio.i"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_stdio/stdio.s"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.obj"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i"
-	@echo "... home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s"
+	@echo "... PioasmBuild"
+	@echo "... cyw43_driver_picow_cyw43_bus_pio_spi_pio_h"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.obj"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.i"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.s"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.obj"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.i"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.s"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.obj"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.i"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.s"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/hid/hid_device.obj"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/hid/hid_device.i"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/hid/hid_device.s"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/midi/midi_device.obj"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/midi/midi_device.i"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/midi/midi_device.s"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/msc/msc_device.obj"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/msc/msc_device.i"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/msc/msc_device.s"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.obj"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.i"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.s"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/net/ncm_device.obj"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/net/ncm_device.i"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/net/ncm_device.s"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.obj"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.i"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.s"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.obj"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.i"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.s"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/video/video_device.obj"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/video/video_device.i"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/video/video_device.s"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/common/tusb_fifo.obj"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/common/tusb_fifo.i"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/common/tusb_fifo.s"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd.obj"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd.i"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd.s"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd_control.obj"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd_control.i"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd_control.s"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.obj"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.i"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.s"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.obj"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.i"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.s"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/tusb.obj"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/tusb.i"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/tusb.s"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/critical_section.obj"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/critical_section.i"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/critical_section.s"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/lock_core.obj"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/lock_core.i"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/lock_core.s"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/mutex.obj"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/mutex.i"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/mutex.s"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/sem.obj"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/sem.i"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/sem.s"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/time.obj"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/time.i"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/time.s"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/timeout_helper.obj"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/timeout_helper.i"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/timeout_helper.s"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/datetime.obj"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/datetime.i"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/datetime.s"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/pheap.obj"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/pheap.i"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/pheap.s"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/queue.obj"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/queue.i"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/queue.s"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_claim/claim.obj"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_claim/claim.i"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_claim/claim.s"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_clocks/clocks.obj"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_clocks/clocks.i"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_clocks/clocks.s"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_divider/divider.obj"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_flash/flash.obj"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_flash/flash.i"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_flash/flash.s"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_gpio/gpio.i"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_gpio/gpio.s"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_irq/irq.obj"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_irq/irq.i"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_irq/irq.s"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.obj"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_pll/pll.obj"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_pll/pll.i"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_pll/pll.s"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_sync/sync.obj"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_sync/sync.i"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_sync/sync.s"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_timer/timer.obj"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_timer/timer.i"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_timer/timer.s"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_uart/uart.obj"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_uart/uart.i"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_uart/uart.s"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_vreg/vreg.obj"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_vreg/vreg.i"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_vreg/vreg.s"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.obj"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_xosc/xosc.obj"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_xosc/xosc.i"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_xosc/xosc.s"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.obj"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_bootrom/bootrom.obj"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_divider/divider.obj"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_aeabi.obj"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_init_rom.obj"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_init_rom.i"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_init_rom.s"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_math.obj"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_math.i"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_math.s"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.obj"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.obj"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.i"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.s"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_float/float_aeabi.obj"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_float/float_init_rom.obj"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_float/float_init_rom.i"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_float/float_init_rom.s"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_float/float_math.obj"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_float/float_math.i"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_float/float_math.s"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.obj"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.obj"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.obj"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.i"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.s"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.obj"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_platform/platform.obj"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_platform/platform.i"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_platform/platform.s"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_printf/printf.obj"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_printf/printf.i"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_printf/printf.s"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_runtime/runtime.obj"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_runtime/runtime.i"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_runtime/runtime.s"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_standard_link/binary_info.obj"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_standard_link/binary_info.i"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_standard_link/binary_info.s"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_standard_link/crt0.obj"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_standard_link/new_delete.obj"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_standard_link/new_delete.i"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_standard_link/new_delete.s"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio/stdio.obj"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio/stdio.i"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio/stdio.s"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.obj"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.i"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.s"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.obj"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.i"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.s"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.obj"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.i"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.s"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_unique_id/unique_id.obj"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i"
+	@echo "... home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s"
 	@echo "... main.obj"
 	@echo "... main.i"
 	@echo "... main.s"

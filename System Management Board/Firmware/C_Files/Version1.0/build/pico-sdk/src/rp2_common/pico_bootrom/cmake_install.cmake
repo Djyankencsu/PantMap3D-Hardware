@@ -1,4 +1,4 @@
-# Install script for directory: /home/daniel/PSA/Firmware_Project/pico-sdk/src/rp2_common/pico_bootrom
+# Install script for directory: /home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_bootrom
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
