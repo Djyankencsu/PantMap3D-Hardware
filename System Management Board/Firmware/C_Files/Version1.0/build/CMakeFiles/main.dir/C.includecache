@@ -9,10 +9,18 @@
 /home/daniel/PSA/Hardware/PantMap3D-Hardware/System Management Board/Firmware/C_Files/Version1.0/build/main.c
 stdio.h
 /home/daniel/PSA/Hardware/PantMap3D-Hardware/System Management Board/Firmware/C_Files/Version1.0/build/stdio.h
+string.h
+/home/daniel/PSA/Hardware/PantMap3D-Hardware/System Management Board/Firmware/C_Files/Version1.0/build/string.h
 pico/stdlib.h
 /home/daniel/PSA/Hardware/PantMap3D-Hardware/System Management Board/Firmware/C_Files/Version1.0/build/pico/stdlib.h
 pico/binary_info.h
 /home/daniel/PSA/Hardware/PantMap3D-Hardware/System Management Board/Firmware/C_Files/Version1.0/build/pico/binary_info.h
+hardware/gpio.h
+/home/daniel/PSA/Hardware/PantMap3D-Hardware/System Management Board/Firmware/C_Files/Version1.0/build/hardware/gpio.h
+hardware/adc.h
+/home/daniel/PSA/Hardware/PantMap3D-Hardware/System Management Board/Firmware/C_Files/Version1.0/build/hardware/adc.h
+hardware/watchdog.h
+/home/daniel/PSA/Hardware/PantMap3D-Hardware/System Management Board/Firmware/C_Files/Version1.0/build/hardware/watchdog.h
 
 /home/daniel/PSA/Hardware/pico-sdk/src/boards/include/boards/pico.h
 
@@ -98,6 +106,8 @@ hardware/timer.h
 
 /home/daniel/PSA/Hardware/pico-sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h
 
+/home/daniel/PSA/Hardware/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/adc.h
+
 /home/daniel/PSA/Hardware/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h
 hardware/platform_defs.h
 /home/daniel/PSA/Hardware/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/hardware/platform_defs.h
@@ -117,6 +127,14 @@ hardware/platform_defs.h
 /home/daniel/PSA/Hardware/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h
 
 /home/daniel/PSA/Hardware/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/uart.h
+
+/home/daniel/PSA/Hardware/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/watchdog.h
+
+/home/daniel/PSA/Hardware/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/adc.h
+hardware/address_mapped.h
+/home/daniel/PSA/Hardware/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/hardware/address_mapped.h
+hardware/regs/adc.h
+/home/daniel/PSA/Hardware/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/hardware/regs/adc.h
 
 /home/daniel/PSA/Hardware/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h
 hardware/address_mapped.h
@@ -156,7 +174,21 @@ hardware/address_mapped.h
 hardware/regs/uart.h
 /home/daniel/PSA/Hardware/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/hardware/regs/uart.h
 
+/home/daniel/PSA/Hardware/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/watchdog.h
+hardware/address_mapped.h
+/home/daniel/PSA/Hardware/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/hardware/address_mapped.h
+hardware/regs/watchdog.h
+/home/daniel/PSA/Hardware/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/hardware/regs/watchdog.h
+
 /home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
+
+/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_adc/include/hardware/adc.h
+pico.h
+/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_adc/include/hardware/pico.h
+hardware/structs/adc.h
+/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_adc/include/hardware/hardware/structs/adc.h
+hardware/gpio.h
+/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_adc/include/hardware/hardware/gpio.h
 
 /home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h
 pico.h
@@ -199,6 +231,12 @@ hardware/structs/uart.h
 /home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_uart/include/hardware/hardware/structs/uart.h
 hardware/regs/dreq.h
 /home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_uart/include/hardware/hardware/regs/dreq.h
+
+/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_watchdog/include/hardware/watchdog.h
+pico.h
+/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_watchdog/include/hardware/pico.h
+hardware/structs/watchdog.h
+/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_watchdog/include/hardware/hardware/structs/watchdog.h
 
 /home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
 hardware/platform_defs.h

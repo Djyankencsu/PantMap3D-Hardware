@@ -114,6 +114,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/common"
   "/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/hw"
   "/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/include"
+  "/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_adc/include"
   )
 set(CMAKE_DEPENDS_CHECK_C
   "/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c" "/home/daniel/PSA/Hardware/PantMap3D-Hardware/System Management Board/Firmware/C_Files/Version1.0/build/CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj"
@@ -143,6 +144,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/datetime.c" "/home/daniel/PSA/Hardware/PantMap3D-Hardware/System Management Board/Firmware/C_Files/Version1.0/build/CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/datetime.c.obj"
   "/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/pheap.c" "/home/daniel/PSA/Hardware/PantMap3D-Hardware/System Management Board/Firmware/C_Files/Version1.0/build/CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/pheap.c.obj"
   "/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/queue.c" "/home/daniel/PSA/Hardware/PantMap3D-Hardware/System Management Board/Firmware/C_Files/Version1.0/build/CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/queue.c.obj"
+  "/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_adc/adc.c" "/home/daniel/PSA/Hardware/PantMap3D-Hardware/System Management Board/Firmware/C_Files/Version1.0/build/CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj"
   "/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_claim/claim.c" "/home/daniel/PSA/Hardware/PantMap3D-Hardware/System Management Board/Firmware/C_Files/Version1.0/build/CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj"
   "/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_clocks/clocks.c" "/home/daniel/PSA/Hardware/PantMap3D-Hardware/System Management Board/Firmware/C_Files/Version1.0/build/CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj"
   "/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_flash/flash.c" "/home/daniel/PSA/Hardware/PantMap3D-Hardware/System Management Board/Firmware/C_Files/Version1.0/build/CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj"
@@ -270,6 +272,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/common"
   "/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/hw"
   "/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/include"
+  "/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_adc/include"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp" "/home/daniel/PSA/Hardware/PantMap3D-Hardware/System Management Board/Firmware/C_Files/Version1.0/build/CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj"
@@ -370,6 +373,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/common"
   "/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/hw"
   "/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/include"
+  "/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_adc/include"
   )
 
 # Targets to which this target links.

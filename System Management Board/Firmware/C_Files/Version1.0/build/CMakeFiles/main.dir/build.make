@@ -866,6 +866,19 @@ CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_fix/rp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c -o CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
 
+CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj: /home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_adc/adc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/daniel/PSA/Hardware/PantMap3D-Hardware/System Management Board/Firmware/C_Files/Version1.0/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj   -c /home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_adc/adc.c
+
+CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_adc/adc.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_adc/adc.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_adc/adc.c > CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_adc/adc.c.i
+
+CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_adc/adc.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_adc/adc.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_adc/adc.c -o CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_adc/adc.c.s
+
 # Object files for target main
 main_OBJECTS = \
 "CMakeFiles/main.dir/main.c.obj" \
@@ -936,7 +949,8 @@ main_OBJECTS = \
 "CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj" \
 "CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/tusb.c.obj" \
 "CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj" \
-"CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj"
+"CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj" \
+"CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj"
 
 # External object files for target main
 main_EXTERNAL_OBJECTS =
@@ -1010,10 +1024,11 @@ main.elf: CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/
 main.elf: CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/tusb.c.obj
 main.elf: CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
 main.elf: CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
+main.elf: CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
 main.elf: CMakeFiles/main.dir/build.make
 main.elf: pico-sdk/src/rp2_common/boot_stage2/bs2_default_padded_checksummed.S
 main.elf: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/daniel/PSA/Hardware/PantMap3D-Hardware/System Management Board/Firmware/C_Files/Version1.0/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_70) "Linking CXX executable main.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/daniel/PSA/Hardware/PantMap3D-Hardware/System Management Board/Firmware/C_Files/Version1.0/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_71) "Linking CXX executable main.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 	/usr/bin/arm-none-eabi-objcopy -Oihex "/home/daniel/PSA/Hardware/PantMap3D-Hardware/System Management Board/Firmware/C_Files/Version1.0/build/main.elf" main.hex
 	/usr/bin/arm-none-eabi-objcopy -Obinary "/home/daniel/PSA/Hardware/PantMap3D-Hardware/System Management Board/Firmware/C_Files/Version1.0/build/main.elf" main.bin
