@@ -241,6 +241,7 @@ void parser(int input_char){
       uint voltage = read_ADC_MUX(AUX_Voltage);
       printf("%d\n",voltage);
     }
+    break;
     case 100:
       debug.in_process = false;
     break;
@@ -258,6 +259,7 @@ uint64_t debug_mode(){
         }
     }
     printf("Exiting debug mode\n");
+    return time_us_64() + debug_time;
 }
 
 int main(){
