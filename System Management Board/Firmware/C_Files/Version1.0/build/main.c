@@ -36,7 +36,7 @@ uint32_t all_pins = 0x1f7c9c9f;
 uint32_t output_pins = 0x1c7c901f;
 uint32_t input_pins = 0x04000c80;
 
-int volt_threshold = (1 << 11);
+int volt_threshold = (1 << 9);
 
 typedef struct bit_holder{
     int S2, S1, S0;
@@ -50,7 +50,7 @@ typedef struct process_monitor{
     uint64_t start_time;
 } monitor;
 monitor sd_now = {false,0};
-monitor debug = {true, 0};
+monitor debug = {false, 0};
 uint64_t debug_time = 0;
 
 const bool American = true;

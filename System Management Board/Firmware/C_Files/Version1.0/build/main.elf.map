@@ -1145,9 +1145,9 @@ Discarded input sections
  .text          0x0000000000000000        0x0 CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
  .data          0x0000000000000000        0x0 CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
  .bss           0x0000000000000000        0x0 CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
- .text          0x0000000000000000        0x0 /tmp/ccFVQz7Z.o
- .data          0x0000000000000000        0x0 /tmp/ccFVQz7Z.o
- .bss           0x0000000000000000        0x0 /tmp/ccFVQz7Z.o
+ .text          0x0000000000000000        0x0 /tmp/ccPbF2xu.o
+ .data          0x0000000000000000        0x0 /tmp/ccPbF2xu.o
+ .bss           0x0000000000000000        0x0 /tmp/ccPbF2xu.o
  .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .text          0x0000000000000000       0x10 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-atexit.o)
@@ -1411,7 +1411,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
 .boot2          0x0000000010000000      0x100
                 0x0000000010000000                __boot2_start__ = .
  *(.boot2)
- .boot2         0x0000000010000000      0x100 /tmp/ccFVQz7Z.o
+ .boot2         0x0000000010000000      0x100 /tmp/ccPbF2xu.o
                 0x0000000010000100                __boot2_end__ = .
                 0x0000000000000001                ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
@@ -2240,7 +2240,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
                 0x0000000020000000       0xc0 CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
                 0x0000000020000000                ram_vector_table
 
-.data           0x00000000200000c0      0xeb0 load address 0x0000000010007994
+.data           0x00000000200000c0      0xea0 load address 0x0000000010007994
                 0x00000000200000c0                __data_start__ = .
  *(vtable)
  *(.time_critical*)
@@ -2308,119 +2308,119 @@ LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
  .data.all_pins
                 0x0000000020000e58        0x4 CMakeFiles/main.dir/main.c.obj
                 0x0000000020000e58                all_pins
- *fill*         0x0000000020000e5c        0x4 
- .data.debug    0x0000000020000e60       0x10 CMakeFiles/main.dir/main.c.obj
-                0x0000000020000e60                debug
  .data.input_pins
-                0x0000000020000e70        0x4 CMakeFiles/main.dir/main.c.obj
-                0x0000000020000e70                input_pins
+                0x0000000020000e5c        0x4 CMakeFiles/main.dir/main.c.obj
+                0x0000000020000e5c                input_pins
  .data.output_pins
-                0x0000000020000e74        0x4 CMakeFiles/main.dir/main.c.obj
-                0x0000000020000e74                output_pins
+                0x0000000020000e60        0x4 CMakeFiles/main.dir/main.c.obj
+                0x0000000020000e60                output_pins
  .data.volt_threshold
-                0x0000000020000e78        0x4 CMakeFiles/main.dir/main.c.obj
-                0x0000000020000e78                volt_threshold
+                0x0000000020000e64        0x4 CMakeFiles/main.dir/main.c.obj
+                0x0000000020000e64                volt_threshold
  .data.striped_spin_lock_num
-                0x0000000020000e7c        0x1 CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- *fill*         0x0000000020000e7d        0x3 
- .data          0x0000000020000e80       0x48 CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
-                0x0000000020000e80                irq_handler_chain_slots
-                0x0000000020000eb0                irq_handler_chain_first_slot
-                0x0000000020000eba                irq_handler_chain_remove_tail
+                0x0000000020000e68        0x1 CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ *fill*         0x0000000020000e69        0x3 
+ .data          0x0000000020000e6c       0x48 CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
+                0x0000000020000e6c                irq_handler_chain_slots
+                0x0000000020000e9c                irq_handler_chain_first_slot
+                0x0000000020000ea6                irq_handler_chain_remove_tail
  .data.default_alarm_pool
-                0x0000000020000ec8       0x18 CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000020000eb4       0x18 CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/time.c.obj
  .data.default_alarm_pool_heap
-                0x0000000020000ee0       0x10 CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000020000ecc       0x10 CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x0000000020000edc        0x4 
  .data.aeabi_bits_funcs
-                0x0000000020000ef0       0x10 CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
-                0x0000000020000ef0                aeabi_bits_funcs
-                0x0000000020000f00                aeabi_bits_funcs_end
+                0x0000000020000ee0       0x10 CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+                0x0000000020000ee0                aeabi_bits_funcs
+                0x0000000020000ef0                aeabi_bits_funcs_end
  .data.aeabi_mem_funcs
-                0x0000000020000f00       0x10 CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x0000000020000f00                aeabi_mem_funcs
-                0x0000000020000f10                aeabi_mem_funcs_end
+                0x0000000020000ef0       0x10 CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x0000000020000ef0                aeabi_mem_funcs
+                0x0000000020000f00                aeabi_mem_funcs_end
  .data.stdio_usb
-                0x0000000020000f10       0x18 CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-                0x0000000020000f10                stdio_usb
+                0x0000000020000f00       0x18 CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000020000f00                stdio_usb
  .data.ep_dir_string
-                0x0000000020000f28        0x8 CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-                0x0000000020000f28                ep_dir_string
+                0x0000000020000f18        0x8 CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x0000000020000f18                ep_dir_string
  .data._usbd_qdef
-                0x0000000020000f30       0x1c CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000020000f30                _usbd_qdef
+                0x0000000020000f20       0x1c CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000020000f20                _usbd_qdef
  .data._usbd_rhport
-                0x0000000020000f4c        0x1 CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000020000f50                . = ALIGN (0x4)
- *fill*         0x0000000020000f4d        0x3 
+                0x0000000020000f3c        0x1 CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000020000f40                . = ALIGN (0x4)
+ *fill*         0x0000000020000f3d        0x3 
  *(.after_data.*)
-                0x0000000020000f50                . = ALIGN (0x4)
-                0x0000000020000f50                PROVIDE (__mutex_array_start = .)
+                0x0000000020000f40                . = ALIGN (0x4)
+                0x0000000020000f40                PROVIDE (__mutex_array_start = .)
  *(SORT_BY_NAME(.mutex_array.*))
  *(.mutex_array)
- .mutex_array   0x0000000020000f50        0x8 CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000020000f58                PROVIDE (__mutex_array_end = .)
-                0x0000000020000f58                . = ALIGN (0x4)
-                0x0000000020000f58                PROVIDE (__preinit_array_start = .)
+ .mutex_array   0x0000000020000f40        0x8 CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000020000f48                PROVIDE (__mutex_array_end = .)
+                0x0000000020000f48                . = ALIGN (0x4)
+                0x0000000020000f48                PROVIDE (__preinit_array_start = .)
  *(SORT_BY_NAME(.preinit_array.*))
  .preinit_array.00001
-                0x0000000020000f58        0x4 CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x0000000020000f48        0x4 CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
  .preinit_array.00010
-                0x0000000020000f5c        0x4 CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+                0x0000000020000f4c        0x4 CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
  .preinit_array.00020
-                0x0000000020000f60        0x4 CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000020000f50        0x4 CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
  .preinit_array.00020
-                0x0000000020000f64        0x4 CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x0000000020000f54        0x4 CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
  *(.preinit_array)
-                0x0000000020000f68                PROVIDE (__preinit_array_end = .)
-                0x0000000020000f68                . = ALIGN (0x4)
-                0x0000000020000f68                PROVIDE (__init_array_start = .)
+                0x0000000020000f58                PROVIDE (__preinit_array_end = .)
+                0x0000000020000f58                . = ALIGN (0x4)
+                0x0000000020000f58                PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array)
- .init_array    0x0000000020000f68        0x4 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
- .init_array    0x0000000020000f6c        0x4 CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
-                0x0000000020000f70                PROVIDE (__init_array_end = .)
-                0x0000000020000f70                . = ALIGN (0x4)
-                0x0000000020000f70                PROVIDE (__fini_array_start = .)
+ .init_array    0x0000000020000f58        0x4 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
+ .init_array    0x0000000020000f5c        0x4 CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+                0x0000000020000f60                PROVIDE (__init_array_end = .)
+                0x0000000020000f60                . = ALIGN (0x4)
+                0x0000000020000f60                PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array)
-                0x0000000020000f70                PROVIDE (__fini_array_end = .)
+                0x0000000020000f60                PROVIDE (__fini_array_end = .)
  *(.jcr)
-                0x0000000020000f70                . = ALIGN (0x4)
-                0x0000000020000f70                __data_end__ = .
+                0x0000000020000f60                . = ALIGN (0x4)
+                0x0000000020000f60                __data_end__ = .
 
 .tm_clone_table
-                0x0000000020000f70        0x0 load address 0x0000000010008844
+                0x0000000020000f60        0x0 load address 0x0000000010008834
  .tm_clone_table
-                0x0000000020000f70        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
+                0x0000000020000f60        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
  .tm_clone_table
-                0x0000000020000f70        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtend.o
+                0x0000000020000f60        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtend.o
 
-.igot.plt       0x0000000020000f70        0x0 load address 0x0000000010008844
- .igot.plt      0x0000000020000f70        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
+.igot.plt       0x0000000020000f60        0x0 load address 0x0000000010008834
+ .igot.plt      0x0000000020000f60        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
 
 .uninitialized_data
-                0x0000000020000f70        0x0 load address 0x0000000010008844
-                0x0000000020000f70                . = ALIGN (0x4)
+                0x0000000020000f60        0x0 load address 0x0000000010008834
+                0x0000000020000f60                . = ALIGN (0x4)
  *(.uninitialized_data*)
 
-.scratch_x      0x0000000020040000        0x0 load address 0x0000000010008844
+.scratch_x      0x0000000020040000        0x0 load address 0x0000000010008834
                 0x0000000020040000                __scratch_x_start__ = .
  *(.scratch_x.*)
                 0x0000000020040000                . = ALIGN (0x4)
                 0x0000000020040000                __scratch_x_end__ = .
-                0x0000000010008844                __scratch_x_source__ = LOADADDR (.scratch_x)
+                0x0000000010008834                __scratch_x_source__ = LOADADDR (.scratch_x)
 
-.scratch_y      0x0000000020041000        0x0 load address 0x0000000010008844
+.scratch_y      0x0000000020041000        0x0 load address 0x0000000010008834
                 0x0000000020041000                __scratch_y_start__ = .
  *(.scratch_y.*)
                 0x0000000020041000                . = ALIGN (0x4)
                 0x0000000020041000                __scratch_y_end__ = .
-                0x0000000010008844                __scratch_y_source__ = LOADADDR (.scratch_y)
+                0x0000000010008834                __scratch_y_source__ = LOADADDR (.scratch_y)
 
-.bss            0x0000000020000f70      0xda4
-                0x0000000020000f70                . = ALIGN (0x4)
-                0x0000000020000f70                __bss_start__ = .
+.bss            0x0000000020000f60      0xdb4
+                0x0000000020000f60                . = ALIGN (0x4)
+                0x0000000020000f60                __bss_start__ = .
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.bss*)))
+ .bss.debug     0x0000000020000f60       0x10 CMakeFiles/main.dir/main.c.obj
+                0x0000000020000f60                debug
  .bss.debug_time
                 0x0000000020000f70        0x8 CMakeFiles/main.dir/main.c.obj
                 0x0000000020000f70                debug_time
@@ -2539,8 +2539,8 @@ LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
  *(.stack*)
  .stack         0x0000000020041000      0x800 CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 
-.flash_end      0x0000000010008844        0x0
-                0x0000000010008844                __flash_binary_end = .
+.flash_end      0x0000000010008834        0x0
+                0x0000000010008834                __flash_binary_end = .
                 0x0000000020040000                __StackLimit = (ORIGIN (RAM) + LENGTH (RAM))
                 0x0000000020041000                __StackOneTop = (ORIGIN (SCRATCH_X) + LENGTH (SCRATCH_X))
                 0x0000000020042000                __StackTop = (ORIGIN (SCRATCH_Y) + LENGTH (SCRATCH_Y))
@@ -2619,7 +2619,7 @@ LOAD CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/tusb.
 LOAD CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
 LOAD CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
 LOAD CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
-LOAD /tmp/ccFVQz7Z.o
+LOAD /tmp/ccPbF2xu.o
 LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libstdc++.a
 LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a
 START GROUP
@@ -2735,7 +2735,7 @@ LOAD linker stubs
  .ARM.attributes
                 0x00000000000007a8       0x2c CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
  .ARM.attributes
-                0x00000000000007d4       0x22 /tmp/ccFVQz7Z.o
+                0x00000000000007d4       0x22 /tmp/ccPbF2xu.o
  .ARM.attributes
                 0x00000000000007f6       0x1e /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .ARM.attributes
