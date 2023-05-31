@@ -147,7 +147,7 @@ float convt_temp(float temp){
   //4096 is based on the RPi Pico's 12-bit ADC readings
   float Vc = 10.0/1000.0;
   float V0 = 400.0/1000.0;
-  temp = temp*(5.0/4096.0);
+  temp = temp*(3.3/4096.0);
   temp = temp-V0;
   temp = temp/Vc;
   if (American){
