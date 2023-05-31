@@ -53,8 +53,6 @@ monitor sd_now = {false,0};
 monitor debug = {false, 0};
 uint64_t debug_time = 0;
 
-const bool American = true;
-
 void set_mux(bits pins){
   sleep_ms(10);
   gpio_put(MUX_S2,pins.S2);
@@ -135,9 +133,8 @@ void state_enforce(uint32_t encoded_state, uint32_t gpio_pins){
 
 void toggle_pin(int pin){
     uint32_t pin_mask = (1 << pin);
-    uint32_t pin_state = !((current_state && pin_mask)>>pin);
-    gpio_put(pin, pin_state);
-    current_state = ((~pin_mask) | current_state) | (pin_state << pin);
+    current_state = current_state ^ pin_mask;
+    gpio_put_masked(output_pins,current_state);
 }
 
 float convt_temp(float temp){
@@ -150,10 +147,6 @@ float convt_temp(float temp){
   temp = temp*(3.3/4096.0);
   temp = temp-V0;
   temp = temp/Vc;
-  if (American){
-    //Fahrenheit conversion
-    temp = (temp*1.8)+32.0;
-  }
   return temp;
 }
 
