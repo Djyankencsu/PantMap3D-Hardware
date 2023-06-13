@@ -18,7 +18,7 @@ void next_pin(){
         current_pin_mask = current_pin_mask << 1;
         current_pin_num = current_pin_num + 1;
         if (current_pin_mask > output_pins){
-            print = false;
+            //print = false;
             current_pin_mask = 1;
             current_pin_num = 0;
             break;
@@ -34,12 +34,15 @@ void next_pin(){
 
 int main(){
     stdio_init_all();
+    //The USB setup is non-blocking, but it needs time. 
+    sleep_ms(1000);
     gpio_init_mask(output_pins);
     gpio_set_dir_out_masked(output_pins);
+    gpio_put_masked(output_pins,0);
     bool hold = false;
     while (true){
         uint64_t time = time_us_64();
-        if ((time % delay_time_us)<(delay_time_us/10)){
+        if ((time % delay_time_us)<(delay_time_us/5)){
             if (!hold){
                 next_pin();
                 hold = true;
