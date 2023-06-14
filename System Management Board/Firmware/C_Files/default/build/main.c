@@ -98,9 +98,9 @@ void evaluate_state(uint64_t time){
 void shutdown_process(uint64_t input_time){
   uint64_t relative_time = input_time - (sd_now.start_time);
   re_engage.in_process = (bool)check_pow();
-  if (re_engage.start_time == 0&&re_engage.in_process){
+  if ((re_engage.start_time == 0)&&re_engage.in_process){
     re_engage.start_time = input_time;
-  } else if (re_engage.start_time!=0&&(!re_engage.in_process)) {
+  } else if ((re_engage.start_time!=0)&&(!re_engage.in_process)) {
     re_engage.start_time = 0;
     sd_now.start_time = input_time;
     relative_time = input_time - (sd_now.start_time);
@@ -122,6 +122,12 @@ void shutdown_process(uint64_t input_time){
   if ((relative_time <= 10000000)&&(re_engage.in_process)){
     sd_now.in_process = false;
     sd_now.start_time = 0;
+  } else if ((relative_time > 15000000)&&(re_engage.in_process)){
+    current_state = current_state & ~(1<<JET_ON);
+    sd_now.in_process = false;
+    sd_now.start_time = 0;
+  } else if ((relative_time > 14000000)&&(re_engage.in_process)){
+    current_state = current_state | (1<<JET_ON);
   }
 }
 
