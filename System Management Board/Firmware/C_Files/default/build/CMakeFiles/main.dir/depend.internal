@@ -2211,7 +2211,7 @@ CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_unique
  generated/pico_base/pico/config_autogen.h
  generated/pico_base/pico/version.h
 CMakeFiles/main.dir/main.c.obj
- /home/daniel/PSA/Hardware/PantMap3D-Hardware/System Management Board/Firmware/C_Files/build/main.c
+ /home/daniel/PSA/Hardware/PantMap3D-Hardware/System Management Board/Firmware/C_Files/default/build/main.c
  /home/daniel/PSA/Hardware/pico-sdk/src/boards/include/boards/pico.h
  /home/daniel/PSA/Hardware/pico-sdk/src/common/pico_base/include/pico.h
  /home/daniel/PSA/Hardware/pico-sdk/src/common/pico_base/include/pico/assert.h

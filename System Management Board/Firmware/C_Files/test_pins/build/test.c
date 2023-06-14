@@ -6,11 +6,14 @@
 #include "hardware/adc.h"
 #include "hardware/watchdog.h"
 
-uint32_t output_pins = 0x187cd07f;
+#define MAIN_RELAY 2
+
+uint32_t output_pins = 0x1a7cd01f;
+//0b1 1010 0111 1100 1101 0000 0001 1111
 uint32_t delay_time_us = 2000000;
 uint32_t current_pin_mask = 1;
 uint32_t current_pin_num = 0;
-//0b1 1000 0111 1100 1101 0000 0111 1111;
+
 
 void next_pin(){
     bool print = true; 
@@ -26,7 +29,7 @@ void next_pin(){
     }
     if (print){
         printf("Setting Pin %d\n",current_pin_num);
-        gpio_put_masked(output_pins,current_pin_mask);
+        gpio_put_masked(output_pins,(current_pin_mask | (1 << MAIN_RELAY)));
     }
     current_pin_mask = current_pin_mask << 1;
     current_pin_num = current_pin_num + 1;

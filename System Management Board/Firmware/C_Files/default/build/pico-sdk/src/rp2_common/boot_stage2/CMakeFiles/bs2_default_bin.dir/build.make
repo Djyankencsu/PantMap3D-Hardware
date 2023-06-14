@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/daniel/PSA/Hardware/PantMap3D-Hardware/System Management Board/Firmware/C_Files"
+CMAKE_SOURCE_DIR = "/home/daniel/PSA/Hardware/PantMap3D-Hardware/System Management Board/Firmware/C_Files/default"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/daniel/PSA/Hardware/PantMap3D-Hardware/System Management Board/Firmware/C_Files/build"
+CMAKE_BINARY_DIR = "/home/daniel/PSA/Hardware/PantMap3D-Hardware/System Management Board/Firmware/C_Files/default/build"
 
 # Utility rule file for bs2_default_bin.
 
@@ -57,8 +57,8 @@ pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin: pico-sdk/src/rp2
 
 
 pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin: pico-sdk/src/rp2_common/boot_stage2/bs2_default.elf
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="/home/daniel/PSA/Hardware/PantMap3D-Hardware/System Management Board/Firmware/C_Files/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Generating bs2_default.bin"
-	cd "/home/daniel/PSA/Hardware/PantMap3D-Hardware/System Management Board/Firmware/C_Files/build/pico-sdk/src/rp2_common/boot_stage2" && /usr/bin/arm-none-eabi-objcopy -Obinary "/home/daniel/PSA/Hardware/PantMap3D-Hardware/System Management Board/Firmware/C_Files/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.elf" "/home/daniel/PSA/Hardware/PantMap3D-Hardware/System Management Board/Firmware/C_Files/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="/home/daniel/PSA/Hardware/PantMap3D-Hardware/System Management Board/Firmware/C_Files/default/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Generating bs2_default.bin"
+	cd "/home/daniel/PSA/Hardware/PantMap3D-Hardware/System Management Board/Firmware/C_Files/default/build/pico-sdk/src/rp2_common/boot_stage2" && /usr/bin/arm-none-eabi-objcopy -Obinary "/home/daniel/PSA/Hardware/PantMap3D-Hardware/System Management Board/Firmware/C_Files/default/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.elf" "/home/daniel/PSA/Hardware/PantMap3D-Hardware/System Management Board/Firmware/C_Files/default/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin"
 
 bs2_default_bin: pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin
 bs2_default_bin: pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin
@@ -72,10 +72,10 @@ pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/build: bs2_de
 .PHONY : pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/build
 
 pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/clean:
-	cd "/home/daniel/PSA/Hardware/PantMap3D-Hardware/System Management Board/Firmware/C_Files/build/pico-sdk/src/rp2_common/boot_stage2" && $(CMAKE_COMMAND) -P CMakeFiles/bs2_default_bin.dir/cmake_clean.cmake
+	cd "/home/daniel/PSA/Hardware/PantMap3D-Hardware/System Management Board/Firmware/C_Files/default/build/pico-sdk/src/rp2_common/boot_stage2" && $(CMAKE_COMMAND) -P CMakeFiles/bs2_default_bin.dir/cmake_clean.cmake
 .PHONY : pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/clean
 
 pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/depend:
-	cd "/home/daniel/PSA/Hardware/PantMap3D-Hardware/System Management Board/Firmware/C_Files/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/daniel/PSA/Hardware/PantMap3D-Hardware/System Management Board/Firmware/C_Files" /home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/boot_stage2 "/home/daniel/PSA/Hardware/PantMap3D-Hardware/System Management Board/Firmware/C_Files/build" "/home/daniel/PSA/Hardware/PantMap3D-Hardware/System Management Board/Firmware/C_Files/build/pico-sdk/src/rp2_common/boot_stage2" "/home/daniel/PSA/Hardware/PantMap3D-Hardware/System Management Board/Firmware/C_Files/build/pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/DependInfo.cmake" --color=$(COLOR)
+	cd "/home/daniel/PSA/Hardware/PantMap3D-Hardware/System Management Board/Firmware/C_Files/default/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/daniel/PSA/Hardware/PantMap3D-Hardware/System Management Board/Firmware/C_Files/default" /home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/boot_stage2 "/home/daniel/PSA/Hardware/PantMap3D-Hardware/System Management Board/Firmware/C_Files/default/build" "/home/daniel/PSA/Hardware/PantMap3D-Hardware/System Management Board/Firmware/C_Files/default/build/pico-sdk/src/rp2_common/boot_stage2" "/home/daniel/PSA/Hardware/PantMap3D-Hardware/System Management Board/Firmware/C_Files/default/build/pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/depend
 

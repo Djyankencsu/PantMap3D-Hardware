@@ -71,7 +71,7 @@ Discarded input sections
  .data          0x0000000000000000        0x0 CMakeFiles/test.dir/test.c.obj
  .bss           0x0000000000000000        0x0 CMakeFiles/test.dir/test.c.obj
  .text.next_pin
-                0x0000000000000000       0x70 CMakeFiles/test.dir/test.c.obj
+                0x0000000000000000       0x74 CMakeFiles/test.dir/test.c.obj
  .text          0x0000000000000000        0x0 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
  .data          0x0000000000000000        0x0 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
  .bss           0x0000000000000000        0x0 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
@@ -1157,9 +1157,9 @@ Discarded input sections
  .comment       0x0000000000000000       0x5a CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
  .ARM.attributes
                 0x0000000000000000       0x2c CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
- .text          0x0000000000000000        0x0 /tmp/ccIzrVSD.o
- .data          0x0000000000000000        0x0 /tmp/ccIzrVSD.o
- .bss           0x0000000000000000        0x0 /tmp/ccIzrVSD.o
+ .text          0x0000000000000000        0x0 /tmp/cc9zANOy.o
+ .data          0x0000000000000000        0x0 /tmp/cc9zANOy.o
+ .bss           0x0000000000000000        0x0 /tmp/cc9zANOy.o
  .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .text          0x0000000000000000       0x10 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-atexit.o)
@@ -1423,7 +1423,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
 .boot2          0x0000000010000000      0x100
                 0x0000000010000000                __boot2_start__ = .
  *(.boot2)
- .boot2         0x0000000010000000      0x100 /tmp/ccIzrVSD.o
+ .boot2         0x0000000010000000      0x100 /tmp/cc9zANOy.o
                 0x0000000010000100                __boot2_end__ = .
                 0x0000000000000001                ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
@@ -1489,568 +1489,567 @@ LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .text*)
  .text          0x00000000100002bc       0x98 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
  .text.startup.main
-                0x0000000010000354      0x100 CMakeFiles/test.dir/test.c.obj
+                0x0000000010000354      0x104 CMakeFiles/test.dir/test.c.obj
                 0x0000000010000354                main
  .text.gpio_init_mask
-                0x0000000010000454       0x68 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x0000000010000454                gpio_init_mask
+                0x0000000010000458       0x68 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x0000000010000458                gpio_init_mask
  .text.running_on_fpga
-                0x00000000100004bc       0x10 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
-                0x00000000100004bc                running_on_fpga
+                0x00000000100004c0       0x10 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+                0x00000000100004c0                running_on_fpga
  .text.hw_claim_or_assert
-                0x00000000100004cc       0x48 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                0x00000000100004cc                hw_claim_or_assert
+                0x00000000100004d0       0x48 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x00000000100004d0                hw_claim_or_assert
  .text.hw_claim_unused_from_range
-                0x0000000010000514       0x9c CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                0x0000000010000514                hw_claim_unused_from_range
+                0x0000000010000518       0x9c CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x0000000010000518                hw_claim_unused_from_range
  .text.spin_locks_reset
-                0x00000000100005b0       0x1c CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x00000000100005b0                spin_locks_reset
+                0x00000000100005b4       0x1c CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x00000000100005b4                spin_locks_reset
  .text.next_striped_spin_lock_num
-                0x00000000100005cc       0x18 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x00000000100005cc                next_striped_spin_lock_num
+                0x00000000100005d0       0x18 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x00000000100005d0                next_striped_spin_lock_num
  .text.spin_lock_claim_unused
-                0x00000000100005e4       0x20 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x00000000100005e4                spin_lock_claim_unused
+                0x00000000100005e8       0x20 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x00000000100005e8                spin_lock_claim_unused
  .text.irq_set_enabled
-                0x0000000010000604       0x24 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010000604                irq_set_enabled
+                0x0000000010000608       0x24 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010000608                irq_set_enabled
  .text.irq_set_pending
-                0x0000000010000628       0x10 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010000628                irq_set_pending
+                0x000000001000062c       0x10 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x000000001000062c                irq_set_pending
  .text.irq_has_shared_handler
-                0x0000000010000638       0x2c CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010000638                irq_has_shared_handler
+                0x000000001000063c       0x2c CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x000000001000063c                irq_has_shared_handler
  .text.irq_get_vtable_handler
-                0x0000000010000664       0x10 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010000664                irq_get_vtable_handler
+                0x0000000010000668       0x10 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010000668                irq_get_vtable_handler
  .text.irq_set_exclusive_handler
-                0x0000000010000674       0x54 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010000674                irq_set_exclusive_handler
+                0x0000000010000678       0x54 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010000678                irq_set_exclusive_handler
  .text.irq_add_shared_handler
-                0x00000000100006c8      0x1c0 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x00000000100006c8                irq_add_shared_handler
+                0x00000000100006cc      0x1c0 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x00000000100006cc                irq_add_shared_handler
  .text.irq_remove_handler
-                0x0000000010000888      0x1b4 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010000888                irq_remove_handler
+                0x000000001000088c      0x1b4 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x000000001000088c                irq_remove_handler
  .text.irq_add_tail_to_free_list
-                0x0000000010000a3c       0xb4 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010000a3c                irq_add_tail_to_free_list
+                0x0000000010000a40       0xb4 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010000a40                irq_add_tail_to_free_list
  .text.irq_init_priorities
-                0x0000000010000af0       0x24 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010000af0                irq_init_priorities
+                0x0000000010000af4       0x24 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010000af4                irq_init_priorities
  .text.user_irq_claim_unused
-                0x0000000010000b14       0x28 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010000b14                user_irq_claim_unused
+                0x0000000010000b18       0x28 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010000b18                user_irq_claim_unused
  .text.lock_init
-                0x0000000010000b3c       0x10 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/lock_core.c.obj
-                0x0000000010000b3c                lock_init
+                0x0000000010000b40       0x10 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/lock_core.c.obj
+                0x0000000010000b40                lock_init
  .text.mutex_init
-                0x0000000010000b4c       0x1c CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/mutex.c.obj
-                0x0000000010000b4c                mutex_init
+                0x0000000010000b50       0x1c CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x0000000010000b50                mutex_init
  .text.recursive_mutex_init
-                0x0000000010000b68       0x1c CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/mutex.c.obj
-                0x0000000010000b68                recursive_mutex_init
+                0x0000000010000b6c       0x1c CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x0000000010000b6c                recursive_mutex_init
  .text.critical_section_init
-                0x0000000010000b84       0x1c CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/critical_section.c.obj
-                0x0000000010000b84                critical_section_init
+                0x0000000010000b88       0x1c CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/critical_section.c.obj
+                0x0000000010000b88                critical_section_init
  .text.critical_section_init_with_lock_num
-                0x0000000010000ba0       0x14 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/critical_section.c.obj
-                0x0000000010000ba0                critical_section_init_with_lock_num
+                0x0000000010000ba4       0x14 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_sync/critical_section.c.obj
+                0x0000000010000ba4                critical_section_init_with_lock_num
  .text.timer_pool_entry_comparator
-                0x0000000010000bb4       0x34 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000010000bb4                timer_pool_entry_comparator
+                0x0000000010000bb8       0x34 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010000bb8                timer_pool_entry_comparator
  .text.sleep_until_callback
-                0x0000000010000be8       0x30 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010000bec       0x30 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/time.c.obj
  .text.add_alarm_under_lock
-                0x0000000010000c18      0x108 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010000c1c      0x108 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_alarm_callback
-                0x0000000010000d20      0x1b8 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010000d24      0x1b8 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_init_default
-                0x0000000010000ed8       0x6c CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000010000ed8                alarm_pool_init_default
+                0x0000000010000edc       0x6c CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010000edc                alarm_pool_init_default
  .text.alarm_pool_get_default
-                0x0000000010000f44        0x8 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000010000f44                alarm_pool_get_default
+                0x0000000010000f48        0x8 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010000f48                alarm_pool_get_default
  .text.alarm_pool_add_alarm_at
-                0x0000000010000f4c      0x190 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000010000f4c                alarm_pool_add_alarm_at
+                0x0000000010000f50      0x190 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010000f50                alarm_pool_add_alarm_at
  .text.alarm_pool_cancel_alarm
-                0x00000000100010dc       0x70 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/time.c.obj
-                0x00000000100010dc                alarm_pool_cancel_alarm
+                0x00000000100010e0       0x70 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/time.c.obj
+                0x00000000100010e0                alarm_pool_cancel_alarm
  .text.alarm_pool_core_num
-                0x000000001000114c        0x4 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/time.c.obj
-                0x000000001000114c                alarm_pool_core_num
+                0x0000000010001150        0x4 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010001150                alarm_pool_core_num
  .text.sleep_until
-                0x0000000010001150       0xc4 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000010001150                sleep_until
+                0x0000000010001154       0xc4 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010001154                sleep_until
  .text.sleep_ms
-                0x0000000010001214       0x34 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000010001214                sleep_ms
+                0x0000000010001218       0x34 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010001218                sleep_ms
  .text.best_effort_wfe_or_timeout
-                0x0000000010001248       0x60 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000010001248                best_effort_wfe_or_timeout
+                0x000000001000124c       0x60 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_time/time.c.obj
+                0x000000001000124c                best_effort_wfe_or_timeout
  .text.hardware_alarm_irq_handler
-                0x00000000100012a8       0xbc CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x00000000100012ac       0xbc CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .text.hardware_alarm_claim
-                0x0000000010001364       0x18 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x0000000010001364                hardware_alarm_claim
+                0x0000000010001368       0x18 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000010001368                hardware_alarm_claim
  .text.time_us_64
-                0x000000001000137c       0x14 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x000000001000137c                time_us_64
+                0x0000000010001380       0x14 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000010001380                time_us_64
  .text.busy_wait_until
-                0x0000000010001390       0x20 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x0000000010001390                busy_wait_until
+                0x0000000010001394       0x20 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000010001394                busy_wait_until
  .text.hardware_alarm_set_callback
-                0x00000000100013b0       0x8c CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x00000000100013b0                hardware_alarm_set_callback
+                0x00000000100013b4       0x8c CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x00000000100013b4                hardware_alarm_set_callback
  .text.hardware_alarm_set_target
-                0x000000001000143c       0xe4 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x000000001000143c                hardware_alarm_set_target
+                0x0000000010001440       0xe4 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000010001440                hardware_alarm_set_target
  .text.hardware_alarm_cancel
-                0x0000000010001520       0x40 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x0000000010001520                hardware_alarm_cancel
+                0x0000000010001524       0x40 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000010001524                hardware_alarm_cancel
  .text.ph_merge_nodes
-                0x0000000010001560       0x68 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000010001564       0x68 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/pheap.c.obj
  .text.ph_post_alloc_init
-                0x00000000100015c8       0x3c CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x00000000100015c8                ph_post_alloc_init
+                0x00000000100015cc       0x3c CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x00000000100015cc                ph_post_alloc_init
  .text.ph_merge_two_pass
-                0x0000000010001604       0x90 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x0000000010001604                ph_merge_two_pass
+                0x0000000010001608       0x90 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000010001608                ph_merge_two_pass
  .text.ph_remove_any_head
-                0x0000000010001694      0x100 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000010001698      0x100 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/pheap.c.obj
  .text.ph_remove_head
-                0x0000000010001794      0x144 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x0000000010001794                ph_remove_head
+                0x0000000010001798      0x144 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000010001798                ph_remove_head
  .text.ph_remove_and_free_node
-                0x00000000100018d8       0x7c CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x00000000100018d8                ph_remove_and_free_node
+                0x00000000100018dc       0x7c CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x00000000100018dc                ph_remove_and_free_node
  .text.clocks_init
-                0x0000000010001954      0x2bc CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-                0x0000000010001954                clocks_init
+                0x0000000010001958      0x2bc CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x0000000010001958                clocks_init
  .text.pll_init
-                0x0000000010001c10       0xa8 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
-                0x0000000010001c10                pll_init
+                0x0000000010001c14       0xa8 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+                0x0000000010001c14                pll_init
  .text.watchdog_start_tick
-                0x0000000010001cb8       0x10 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
-                0x0000000010001cb8                watchdog_start_tick
+                0x0000000010001cbc       0x10 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+                0x0000000010001cbc                watchdog_start_tick
  .text.watchdog_reboot
-                0x0000000010001cc8       0x98 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
-                0x0000000010001cc8                watchdog_reboot
+                0x0000000010001ccc       0x98 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+                0x0000000010001ccc                watchdog_reboot
  .text.xosc_init
-                0x0000000010001d60       0x28 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
-                0x0000000010001d60                xosc_init
+                0x0000000010001d64       0x28 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+                0x0000000010001d64                xosc_init
  .text.runtime_init
-                0x0000000010001d88       0xf0 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x0000000010001d88                runtime_init
- .text._exit    0x0000000010001e78        0x4 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x0000000010001e78                _exit
- .text.exit     0x0000000010001e7c        0x8 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x0000000010001e7c                exit
- .text.panic    0x0000000010001e84       0x30 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x0000000010001e84                panic
+                0x0000000010001d8c       0xf0 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000000010001d8c                runtime_init
+ .text._exit    0x0000000010001e7c        0x4 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000000010001e7c                _exit
+ .text.exit     0x0000000010001e80        0x8 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000000010001e80                exit
+ .text.panic    0x0000000010001e88       0x30 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000000010001e88                panic
  .text.hard_assertion_failure
-                0x0000000010001eb4        0xc CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x0000000010001eb4                hard_assertion_failure
+                0x0000000010001eb8        0xc CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000000010001eb8                hard_assertion_failure
  .text._out_null
-                0x0000000010001ec0        0x4 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010001ec4        0x4 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._out_rev
-                0x0000000010001ec4       0xd0 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010001ec8       0xd0 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._ntoa_format
-                0x0000000010001f94      0x1d0 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010001f98      0x1d0 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._out_char
-                0x0000000010002164       0x10 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010002168       0x10 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._out_fct
-                0x0000000010002174       0x10 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .text._etoa    0x0000000010002184      0x478 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .text._ftoa    0x00000000100025fc      0x3e0 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010002178       0x10 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .text._etoa    0x0000000010002188      0x478 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .text._ftoa    0x0000000010002600      0x3e0 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._vsnprintf
-                0x00000000100029dc      0xb08 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x00000000100029e0      0xb08 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text.vfctprintf
-                0x00000000100034e4       0x20 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
-                0x00000000100034e4                vfctprintf
+                0x00000000100034e8       0x20 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x00000000100034e8                vfctprintf
  .text.weak_raw_vprintf
-                0x0000000010003504       0x30 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
-                0x0000000010003504                weak_raw_vprintf
- .text          0x0000000010003534       0x10 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+                0x0000000010003508       0x30 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010003508                weak_raw_vprintf
+ .text          0x0000000010003538       0x10 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
  .text.rom_func_lookup
-                0x0000000010003544       0x10 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x0000000010003544                rom_func_lookup
+                0x0000000010003548       0x10 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x0000000010003548                rom_func_lookup
  .text.rom_data_lookup
-                0x0000000010003554       0x10 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x0000000010003554                rom_data_lookup
+                0x0000000010003558       0x10 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x0000000010003558                rom_data_lookup
  .text.rom_funcs_lookup
-                0x0000000010003564       0x3c CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x0000000010003564                rom_funcs_lookup
+                0x0000000010003568       0x3c CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x0000000010003568                rom_funcs_lookup
  .text.__wrap___aeabi_idiv
-                0x00000000100035a0       0x50 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x00000000100035a0                __wrap___aeabi_idivmod
-                0x00000000100035a0                divmod_s32s32
-                0x00000000100035a0                div_s32s32
-                0x00000000100035a0                __wrap___aeabi_idiv
-                0x00000000100035a8                divmod_s32s32_unsafe
-                0x00000000100035d4                divmod_s32s32_savestate
+                0x00000000100035a4       0x50 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x00000000100035a4                __wrap___aeabi_idivmod
+                0x00000000100035a4                divmod_s32s32
+                0x00000000100035a4                div_s32s32
+                0x00000000100035a4                __wrap___aeabi_idiv
+                0x00000000100035ac                divmod_s32s32_unsafe
+                0x00000000100035d8                divmod_s32s32_savestate
  .text.__wrap___aeabi_uidiv
-                0x00000000100035f0       0x4c CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x00000000100035f0                __wrap___aeabi_uidiv
-                0x00000000100035f0                __wrap___aeabi_uidivmod
-                0x00000000100035f0                div_u32u32
-                0x00000000100035f0                divmod_u32u32
-                0x00000000100035f8                divmod_u32u32_unsafe
-                0x0000000010003620                divmod_u32u32_savestate
+                0x00000000100035f4       0x4c CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x00000000100035f4                __wrap___aeabi_uidiv
+                0x00000000100035f4                __wrap___aeabi_uidivmod
+                0x00000000100035f4                div_u32u32
+                0x00000000100035f4                divmod_u32u32
+                0x00000000100035fc                divmod_u32u32_unsafe
+                0x0000000010003624                divmod_u32u32_savestate
  .text.__wrap___aeabi_ldiv
-                0x000000001000363c      0x424 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x000000001000363c                div_s64s64
-                0x000000001000363c                divmod_s64s64
-                0x000000001000363c                __wrap___aeabi_ldivmod
-                0x000000001000366c                div_u64u64
-                0x000000001000366c                divmod_u64u64
-                0x000000001000366c                __wrap___aeabi_uldivmod
-                0x000000001000367c                divmod_u64u64_savestate
-                0x000000001000369c                divmod_s64s64_unsafe
-                0x0000000010003724                divmod_u64u64_unsafe
+                0x0000000010003640      0x424 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x0000000010003640                div_s64s64
+                0x0000000010003640                divmod_s64s64
+                0x0000000010003640                __wrap___aeabi_ldivmod
+                0x0000000010003670                div_u64u64
+                0x0000000010003670                divmod_u64u64
+                0x0000000010003670                __wrap___aeabi_uldivmod
+                0x0000000010003680                divmod_u64u64_savestate
+                0x00000000100036a0                divmod_s64s64_unsafe
+                0x0000000010003728                divmod_u64u64_unsafe
  .text.__wrap___aeabi_darithmetic
-                0x0000000010003a60       0x80 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010003a60                __wrap___aeabi_drsub
-                0x0000000010003a66                __wrap___aeabi_dsub
-                0x0000000010003a78                __wrap___aeabi_dadd
-                0x0000000010003a8a                __wrap___aeabi_ddiv
-                0x0000000010003ac6                __wrap___aeabi_dmul
+                0x0000000010003a64       0x80 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010003a64                __wrap___aeabi_drsub
+                0x0000000010003a6a                __wrap___aeabi_dsub
+                0x0000000010003a7c                __wrap___aeabi_dadd
+                0x0000000010003a8e                __wrap___aeabi_ddiv
+                0x0000000010003aca                __wrap___aeabi_dmul
  .text.__wrap___aeabi_cdcmple
-                0x0000000010003ae0       0x6c CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010003ae0                __wrap___aeabi_cdrcmple
-                0x0000000010003af0                __wrap___aeabi_cdcmple
-                0x0000000010003af0                __wrap___aeabi_cdcmpeq
+                0x0000000010003ae4       0x6c CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010003ae4                __wrap___aeabi_cdrcmple
+                0x0000000010003af4                __wrap___aeabi_cdcmple
+                0x0000000010003af4                __wrap___aeabi_cdcmpeq
  .text.__wrap___aeabi_dcmplt
-                0x0000000010003b4c        0xc CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010003b4c                __wrap___aeabi_dcmplt
+                0x0000000010003b50        0xc CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010003b50                __wrap___aeabi_dcmplt
  .text.__wrap___aeabi_dcmple
-                0x0000000010003b58       0x10 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010003b58                __wrap___aeabi_dcmple
+                0x0000000010003b5c       0x10 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010003b5c                __wrap___aeabi_dcmple
  .text.__wrap___aeabi_dcmpge
-                0x0000000010003b68       0x10 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010003b68                __wrap___aeabi_dcmpge
+                0x0000000010003b6c       0x10 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010003b6c                __wrap___aeabi_dcmpge
  .text.__wrap___aeabi_dcmpgt
-                0x0000000010003b78        0xa CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010003b78                __wrap___aeabi_dcmpgt
+                0x0000000010003b7c        0xa CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010003b7c                __wrap___aeabi_dcmpgt
  .text.__wrap___aeabi_dcmpun
-                0x0000000010003b82       0x1c CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010003b82                __wrap___aeabi_dcmpun
- *fill*         0x0000000010003b9e        0x2 
+                0x0000000010003b86       0x1c CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010003b86                __wrap___aeabi_dcmpun
+ *fill*         0x0000000010003ba2        0x2 
  .text.__wrap___aeabi_i2d
-                0x0000000010003ba0       0x38 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010003ba0                __wrap___aeabi_ui2d
-                0x0000000010003ba8                __wrap___aeabi_i2d
+                0x0000000010003ba4       0x38 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010003ba4                __wrap___aeabi_ui2d
+                0x0000000010003bac                __wrap___aeabi_i2d
  .text.__wrap___aeabi_d2iz
-                0x0000000010003bd8       0x48 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010003bd8                __wrap___aeabi_d2iz
-                0x0000000010003bd8                double2int_z
+                0x0000000010003bdc       0x48 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010003bdc                __wrap___aeabi_d2iz
+                0x0000000010003bdc                double2int_z
  .text.__wrap___aeabi_d2uiz
-                0x0000000010003c20       0x18 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010003c20                double2uint
-                0x0000000010003c20                __wrap___aeabi_d2uiz
+                0x0000000010003c24       0x18 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010003c24                double2uint
+                0x0000000010003c24                __wrap___aeabi_d2uiz
  .text.__aeabi_double_init
-                0x0000000010003c38       0xc0 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
-                0x0000000010003c38                __aeabi_double_init
+                0x0000000010003c3c       0xc0 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x0000000010003c3c                __aeabi_double_init
  .text.double_table_shim_on_use_helper
-                0x0000000010003cf8       0x2c CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000010003cf8                double_table_shim_on_use_helper
+                0x0000000010003cfc       0x2c CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x0000000010003cfc                double_table_shim_on_use_helper
  .text.__wrap___aeabi_dsub
-                0x0000000010003d24       0x10 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000010003d24                drsub_shim
-                0x0000000010003d2a                dsub_shim
+                0x0000000010003d28       0x10 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x0000000010003d28                drsub_shim
+                0x0000000010003d2e                dsub_shim
  .text.dadd_shim
-                0x0000000010003d34      0x15c CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000010003d34                dadd_shim
+                0x0000000010003d38      0x15c CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x0000000010003d38                dadd_shim
  .text.dmul_shim
-                0x0000000010003e90      0x15c CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000010003e90                dmul_shim
+                0x0000000010003e94      0x15c CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x0000000010003e94                dmul_shim
  .text.ddiv_shim
-                0x0000000010003fec      0x1b0 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000010003fec                ddiv_shim
+                0x0000000010003ff0      0x1b0 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x0000000010003ff0                ddiv_shim
  .text.double2uint_shim
-                0x000000001000419c        0xe CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x000000001000419c                double2uint_shim
-                0x000000001000419e                double2ufix_shim
- *fill*         0x00000000100041aa        0x2 
+                0x00000000100041a0        0xe CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x00000000100041a0                double2uint_shim
+                0x00000000100041a2                double2ufix_shim
+ *fill*         0x00000000100041ae        0x2 
  .text.double2uint64_shim
-                0x00000000100041ac       0x70 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x00000000100041ac                double2uint64_shim
-                0x00000000100041ae                double2ufix64_shim
-                0x00000000100041ce                d2fix_a
+                0x00000000100041b0       0x70 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x00000000100041b0                double2uint64_shim
+                0x00000000100041b2                double2ufix64_shim
+                0x00000000100041d2                d2fix_a
  .text.dunpacks
-                0x000000001000421c       0x3c CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x000000001000421c                dunpacks
+                0x0000000010004220       0x3c CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x0000000010004220                dunpacks
  .text.__aeabi_lmul
-                0x0000000010004258       0x32 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
-                0x0000000010004258                __wrap___aeabi_lmul
- *fill*         0x000000001000428a        0x2 
+                0x000000001000425c       0x32 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+                0x000000001000425c                __wrap___aeabi_lmul
+ *fill*         0x000000001000428e        0x2 
  .text.__aeabi_float_init
-                0x000000001000428c       0x64 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
-                0x000000001000428c                __aeabi_float_init
+                0x0000000010004290       0x64 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+                0x0000000010004290                __aeabi_float_init
  .text.float_table_shim_on_use_helper
-                0x00000000100042f0       0x2c CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
-                0x00000000100042f0                float_table_shim_on_use_helper
- .text          0x000000001000431c       0x10 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x000000001000431c                __aeabi_mem_init
- .text.memset   0x000000001000432c        0xc CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x000000001000432c                __wrap_memset
- .text.memcpy   0x0000000010004338        0xc CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x0000000010004338                __wrap___aeabi_memcpy
-                0x0000000010004338                __wrap_memcpy
+                0x00000000100042f4       0x2c CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+                0x00000000100042f4                float_table_shim_on_use_helper
+ .text          0x0000000010004320       0x10 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x0000000010004320                __aeabi_mem_init
+ .text.memset   0x0000000010004330        0xc CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x0000000010004330                __wrap_memset
+ .text.memcpy   0x000000001000433c        0xc CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x000000001000433c                __wrap___aeabi_memcpy
+                0x000000001000433c                __wrap_memcpy
  .text.stdio_out_chars_no_crlf
-                0x0000000010004344       0x10 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010004348       0x10 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_out_chars_crlf
-                0x0000000010004354       0x94 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010004358       0x94 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_buffered_printer
-                0x00000000100043e8       0x64 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x00000000100043ec       0x64 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_put_string
-                0x000000001000444c      0x104 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010004450      0x104 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.__wrap_putchar
-                0x0000000010004550       0x98 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000010004550                __wrap_putchar
+                0x0000000010004554       0x98 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010004554                __wrap_putchar
  .text.__wrap_puts
-                0x00000000100045e8       0x3c CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x00000000100045e8                __wrap_puts
+                0x00000000100045ec       0x3c CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x00000000100045ec                __wrap_puts
  .text.stdio_set_driver_enabled
-                0x0000000010004624       0x30 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000010004624                stdio_set_driver_enabled
+                0x0000000010004628       0x30 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010004628                stdio_set_driver_enabled
  .text.__wrap_vprintf
-                0x0000000010004654       0xd8 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000010004654                __wrap_vprintf
+                0x0000000010004658       0xd8 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010004658                __wrap_vprintf
  .text.__wrap_printf
-                0x000000001000472c       0x18 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x000000001000472c                __wrap_printf
+                0x0000000010004730       0x18 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010004730                __wrap_printf
  .text.stdio_init_all
-                0x0000000010004744        0x8 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000010004744                stdio_init_all
+                0x0000000010004748        0x8 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010004748                stdio_init_all
  .text.resetd_init
-                0x000000001000474c        0x4 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x0000000010004750        0x4 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .text.resetd_reset
-                0x0000000010004750        0xc CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x0000000010004754        0xc CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .text.resetd_open
-                0x000000001000475c       0x28 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x0000000010004760       0x28 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .text.resetd_xfer_cb
-                0x0000000010004784        0x4 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x0000000010004788        0x4 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .text.resetd_control_xfer_cb
-                0x0000000010004788       0x64 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x000000001000478c       0x64 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .text.usbd_app_driver_get_cb
-                0x00000000100047ec        0xc CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
-                0x00000000100047ec                usbd_app_driver_get_cb
+                0x00000000100047f0        0xc CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x00000000100047f0                usbd_app_driver_get_cb
  .text.tud_cdc_line_coding_cb
-                0x00000000100047f8       0x34 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
-                0x00000000100047f8                tud_cdc_line_coding_cb
+                0x00000000100047fc       0x34 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x00000000100047fc                tud_cdc_line_coding_cb
  .text.stdio_usb_set_chars_available_callback
-                0x000000001000482c       0x14 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-                0x000000001000482c                stdio_usb_set_chars_available_callback
- .text.usb_irq  0x0000000010004840       0x10 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000010004830       0x14 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000010004830                stdio_usb_set_chars_available_callback
+ .text.usb_irq  0x0000000010004844       0x10 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .text.timer_task
-                0x0000000010004850       0x54 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000010004854       0x54 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .text.stdio_usb_in_chars
-                0x00000000100048a4       0x90 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-                0x00000000100048a4                stdio_usb_in_chars
+                0x00000000100048a8       0x90 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x00000000100048a8                stdio_usb_in_chars
  .text.stdio_usb_out_chars
-                0x0000000010004934      0x100 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000010004938      0x100 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .text.low_priority_worker_irq
-                0x0000000010004a34       0xa8 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000010004a38       0xa8 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .text.tud_cdc_rx_cb
-                0x0000000010004adc       0x20 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-                0x0000000010004adc                tud_cdc_rx_cb
+                0x0000000010004ae0       0x20 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000010004ae0                tud_cdc_rx_cb
  .text.stdio_usb_init
-                0x0000000010004afc       0xdc CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-                0x0000000010004afc                stdio_usb_init
+                0x0000000010004b00       0xdc CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000010004b00                stdio_usb_init
  .text.tud_descriptor_device_cb
-                0x0000000010004bd8        0x8 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
-                0x0000000010004bd8                tud_descriptor_device_cb
+                0x0000000010004bdc        0x8 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x0000000010004bdc                tud_descriptor_device_cb
  .text.tud_descriptor_configuration_cb
-                0x0000000010004be0        0x8 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
-                0x0000000010004be0                tud_descriptor_configuration_cb
+                0x0000000010004be4        0x8 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x0000000010004be4                tud_descriptor_configuration_cb
  .text.tud_descriptor_string_cb
-                0x0000000010004be8       0x70 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
-                0x0000000010004be8                tud_descriptor_string_cb
+                0x0000000010004bec       0x70 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x0000000010004bec                tud_descriptor_string_cb
  .text.startup._retrieve_unique_id_on_boot
-                0x0000000010004c58       0x10 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+                0x0000000010004c5c       0x10 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
  .text.pico_get_unique_board_id_string
-                0x0000000010004c68      0x1bc CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
-                0x0000000010004c68                pico_get_unique_board_id_string
+                0x0000000010004c6c      0x1bc CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+                0x0000000010004c6c                pico_get_unique_board_id_string
  .text.flash_get_unique_id
-                0x0000000010004e24       0x40 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
-                0x0000000010004e24                flash_get_unique_id
+                0x0000000010004e28       0x40 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+                0x0000000010004e28                flash_get_unique_id
  .text.dcd_int_enable
-                0x0000000010004e64        0xc CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010004e64                dcd_int_enable
+                0x0000000010004e68        0xc CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010004e68                dcd_int_enable
  .text.dcd_set_address
-                0x0000000010004e70       0x14 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010004e70                dcd_set_address
+                0x0000000010004e74       0x14 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010004e74                dcd_set_address
  .text.dcd_connect
-                0x0000000010004e84       0x10 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010004e84                dcd_connect
+                0x0000000010004e88       0x10 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010004e88                dcd_connect
  .text.dcd_init
-                0x0000000010004e94       0x9c CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010004e94                dcd_init
+                0x0000000010004e98       0x9c CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010004e98                dcd_init
  .text.dcd_edpt0_status_complete
-                0x0000000010004f30       0x1c CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010004f30                dcd_edpt0_status_complete
+                0x0000000010004f34       0x1c CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010004f34                dcd_edpt0_status_complete
  .text.dcd_edpt_open
-                0x0000000010004f4c      0x108 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010004f4c                dcd_edpt_open
+                0x0000000010004f50      0x108 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010004f50                dcd_edpt_open
  .text.dcd_edpt_close_all
-                0x0000000010005054        0x8 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010005054                dcd_edpt_close_all
+                0x0000000010005058        0x8 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010005058                dcd_edpt_close_all
  .text.dcd_edpt_xfer
-                0x000000001000505c       0x24 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x000000001000505c                dcd_edpt_xfer
+                0x0000000010005060       0x24 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010005060                dcd_edpt_xfer
  .text.dcd_edpt_stall
-                0x0000000010005080       0x38 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010005080                dcd_edpt_stall
+                0x0000000010005084       0x38 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010005084                dcd_edpt_stall
  .text.dcd_edpt_clear_stall
-                0x00000000100050b8       0x30 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x00000000100050b8                dcd_edpt_clear_stall
+                0x00000000100050bc       0x30 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x00000000100050bc                dcd_edpt_clear_stall
  .text.rp2040_usb_init
-                0x00000000100050e8       0x4c CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-                0x00000000100050e8                rp2040_usb_init
+                0x00000000100050ec       0x4c CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x00000000100050ec                rp2040_usb_init
  .text.hw_endpoint_xfer_start
-                0x0000000010005134       0x54 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-                0x0000000010005134                hw_endpoint_xfer_start
+                0x0000000010005138       0x54 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x0000000010005138                hw_endpoint_xfer_start
  .text.tud_mounted
-                0x0000000010005188       0x10 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010005188                tud_mounted
+                0x000000001000518c       0x10 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x000000001000518c                tud_mounted
  .text.tud_suspended
-                0x0000000010005198       0x10 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010005198                tud_suspended
+                0x000000001000519c       0x10 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x000000001000519c                tud_suspended
  .text.tud_inited
-                0x00000000100051a8       0x14 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x00000000100051a8                tud_inited
+                0x00000000100051ac       0x14 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x00000000100051ac                tud_inited
  .text.tud_init
-                0x00000000100051bc       0xe4 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x00000000100051bc                tud_init
+                0x00000000100051c0       0xe4 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x00000000100051c0                tud_init
  .text.tud_task_ext
-                0x00000000100052a0      0x858 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x00000000100052a0                tud_task_ext
+                0x00000000100052a4      0x858 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x00000000100052a4                tud_task_ext
  .text.usbd_open_edpt_pair
-                0x0000000010005af8       0x9c CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010005af8                usbd_open_edpt_pair
+                0x0000000010005afc       0x9c CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010005afc                usbd_open_edpt_pair
  .text.usbd_defer_func
-                0x0000000010005b94       0x4c CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010005b94                usbd_defer_func
+                0x0000000010005b98       0x4c CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010005b98                usbd_defer_func
  .text.usbd_edpt_open
-                0x0000000010005be0       0x34 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010005be0                usbd_edpt_open
+                0x0000000010005be4       0x34 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010005be4                usbd_edpt_open
  .text.usbd_edpt_claim
-                0x0000000010005c14       0x28 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010005c14                usbd_edpt_claim
+                0x0000000010005c18       0x28 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010005c18                usbd_edpt_claim
  .text.usbd_edpt_release
-                0x0000000010005c3c       0x28 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010005c3c                usbd_edpt_release
+                0x0000000010005c40       0x28 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010005c40                usbd_edpt_release
  .text.usbd_edpt_xfer
-                0x0000000010005c64       0x4c CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010005c64                usbd_edpt_xfer
+                0x0000000010005c68       0x4c CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010005c68                usbd_edpt_xfer
  .text.tud_control_status
-                0x0000000010005cb0       0x30 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x0000000010005cb0                tud_control_status
+                0x0000000010005cb4       0x30 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x0000000010005cb4                tud_control_status
  .text.tud_control_xfer
-                0x0000000010005ce0       0xb8 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x0000000010005ce0                tud_control_xfer
+                0x0000000010005ce4       0xb8 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x0000000010005ce4                tud_control_xfer
  .text.usbd_control_reset
-                0x0000000010005d98       0x14 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x0000000010005d98                usbd_control_reset
+                0x0000000010005d9c       0x14 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x0000000010005d9c                usbd_control_reset
  .text.usbd_control_set_complete_callback
-                0x0000000010005dac        0xc CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x0000000010005dac                usbd_control_set_complete_callback
+                0x0000000010005db0        0xc CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x0000000010005db0                usbd_control_set_complete_callback
  .text.usbd_control_set_request
-                0x0000000010005db8       0x1c CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x0000000010005db8                usbd_control_set_request
+                0x0000000010005dbc       0x1c CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x0000000010005dbc                usbd_control_set_request
  .text.usbd_control_xfer_cb
-                0x0000000010005dd4       0xf8 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x0000000010005dd4                usbd_control_xfer_cb
+                0x0000000010005dd8       0xf8 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x0000000010005dd8                usbd_control_xfer_cb
  .text.tud_cdc_n_connected
-                0x0000000010005ecc       0x30 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010005ecc                tud_cdc_n_connected
+                0x0000000010005ed0       0x30 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010005ed0                tud_cdc_n_connected
  .text.tud_cdc_n_available
-                0x0000000010005efc       0x18 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010005efc                tud_cdc_n_available
+                0x0000000010005f00       0x18 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010005f00                tud_cdc_n_available
  .text.tud_cdc_n_read
-                0x0000000010005f14       0x70 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010005f14                tud_cdc_n_read
+                0x0000000010005f18       0x70 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010005f18                tud_cdc_n_read
  .text.tud_cdc_n_write_flush
-                0x0000000010005f84       0x78 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010005f84                tud_cdc_n_write_flush
+                0x0000000010005f88       0x78 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010005f88                tud_cdc_n_write_flush
  .text.tud_cdc_n_write
-                0x0000000010005ffc       0x34 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010005ffc                tud_cdc_n_write
+                0x0000000010006000       0x34 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010006000                tud_cdc_n_write
  .text.tud_cdc_n_write_available
-                0x0000000010006030       0x18 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010006030                tud_cdc_n_write_available
+                0x0000000010006034       0x18 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010006034                tud_cdc_n_write_available
  .text.cdcd_init
-                0x0000000010006048       0x7c CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010006048                cdcd_init
+                0x000000001000604c       0x7c CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x000000001000604c                cdcd_init
  .text.cdcd_reset
-                0x00000000100060c4       0x2c CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x00000000100060c4                cdcd_reset
+                0x00000000100060c8       0x2c CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x00000000100060c8                cdcd_reset
  .text.cdcd_open
-                0x00000000100060f0       0xe8 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x00000000100060f0                cdcd_open
+                0x00000000100060f4       0xe8 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x00000000100060f4                cdcd_open
  .text.cdcd_control_xfer_cb
-                0x00000000100061d8       0xe4 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x00000000100061d8                cdcd_control_xfer_cb
+                0x00000000100061dc       0xe4 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x00000000100061dc                cdcd_control_xfer_cb
  .text.cdcd_xfer_cb
-                0x00000000100062bc      0x198 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x00000000100062bc                cdcd_xfer_cb
+                0x00000000100062c0      0x198 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x00000000100062c0                cdcd_xfer_cb
  .text.tusb_init
-                0x0000000010006454        0xc CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x0000000010006454                tusb_init
+                0x0000000010006458        0xc CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x0000000010006458                tusb_init
  .text.tusb_inited
-                0x0000000010006460        0x8 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x0000000010006460                tusb_inited
+                0x0000000010006464        0x8 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x0000000010006464                tusb_inited
  .text.tu_edpt_claim
-                0x0000000010006468       0x50 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x0000000010006468                tu_edpt_claim
+                0x000000001000646c       0x50 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x000000001000646c                tu_edpt_claim
  .text.tu_edpt_release
-                0x00000000100064b8       0x38 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x00000000100064b8                tu_edpt_release
+                0x00000000100064bc       0x38 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x00000000100064bc                tu_edpt_release
  .text.tu_edpt_validate
-                0x00000000100064f0       0x78 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x00000000100064f0                tu_edpt_validate
+                0x00000000100064f4       0x78 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x00000000100064f4                tu_edpt_validate
  .text.tu_edpt_bind_driver
-                0x0000000010006568       0x34 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x0000000010006568                tu_edpt_bind_driver
+                0x000000001000656c       0x34 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x000000001000656c                tu_edpt_bind_driver
  .text.tu_fifo_config
-                0x000000001000659c       0x70 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x000000001000659c                tu_fifo_config
+                0x00000000100065a0       0x70 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x00000000100065a0                tu_fifo_config
  .text.tu_fifo_count
-                0x000000001000660c       0x2c CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x000000001000660c                tu_fifo_count
+                0x0000000010006610       0x2c CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010006610                tu_fifo_count
  .text.tu_fifo_empty
-                0x0000000010006638       0x10 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010006638                tu_fifo_empty
+                0x000000001000663c       0x10 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x000000001000663c                tu_fifo_empty
  .text.tu_fifo_remaining
-                0x0000000010006648       0x2c CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010006648                tu_fifo_remaining
+                0x000000001000664c       0x2c CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x000000001000664c                tu_fifo_remaining
  .text.tu_fifo_read
-                0x0000000010006674       0x9c CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010006674                tu_fifo_read
+                0x0000000010006678       0x9c CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010006678                tu_fifo_read
  .text.tu_fifo_read_n
-                0x0000000010006710       0xf0 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010006710                tu_fifo_read_n
+                0x0000000010006714       0xf0 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010006714                tu_fifo_read_n
  .text.tu_fifo_write
-                0x0000000010006800       0x88 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010006800                tu_fifo_write
+                0x0000000010006804       0x88 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010006804                tu_fifo_write
  .text.tu_fifo_write_n
-                0x0000000010006888      0x158 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010006888                tu_fifo_write_n
+                0x000000001000688c      0x158 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x000000001000688c                tu_fifo_write_n
  .text.tu_fifo_clear
-                0x00000000100069e0       0x40 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x00000000100069e0                tu_fifo_clear
+                0x00000000100069e4       0x40 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x00000000100069e4                tu_fifo_clear
  .text.tu_fifo_set_overwritable
-                0x0000000010006a20       0x48 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010006a20                tu_fifo_set_overwritable
- .text          0x0000000010006a68       0x68 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
-                0x0000000010006a68                strlen
+                0x0000000010006a24       0x48 CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010006a24                tu_fifo_set_overwritable
+ .text          0x0000000010006a6c       0x68 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
+                0x0000000010006a6c                strlen
  *(.fini)
- .fini          0x0000000010006ad0        0x4 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crti.o
-                0x0000000010006ad0                _fini
- *fill*         0x0000000010006ad4        0x4 
+ .fini          0x0000000010006ad4        0x4 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crti.o
+                0x0000000010006ad4                _fini
  .fini.__stub   0x0000000010006ad8       0xd0 linker stubs
  *crtbegin.o(.ctors)
  *crtbegin?.o(.ctors)
@@ -2560,7 +2559,7 @@ LOAD CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/tusb.
 LOAD CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
 LOAD CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
 LOAD CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
-LOAD /tmp/ccIzrVSD.o
+LOAD /tmp/cc9zANOy.o
 LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libstdc++.a
 LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a
 START GROUP
@@ -2674,7 +2673,7 @@ LOAD linker stubs
  .ARM.attributes
                 0x000000000000077c       0x2c CMakeFiles/test.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
  .ARM.attributes
-                0x00000000000007a8       0x22 /tmp/ccIzrVSD.o
+                0x00000000000007a8       0x22 /tmp/cc9zANOy.o
  .ARM.attributes
                 0x00000000000007ca       0x1e /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .ARM.attributes

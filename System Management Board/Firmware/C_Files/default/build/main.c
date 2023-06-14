@@ -27,6 +27,7 @@
 #define JET_ON 15
 #define BUILT_IN_LED 25
 #define mask 0xffffffe0
+#define V_REF 3.25
 
 #define InitialPower 0x00000000
 #define MainRelay 0x00000004
@@ -49,8 +50,9 @@ typedef struct process_monitor{
     bool in_process;
     uint64_t start_time;
 } monitor;
-monitor sd_now = {false,0};
+monitor sd_now = {false, 0};
 monitor debug = {false, 0};
+monitor re_engage = {false, 0};
 uint64_t debug_time = 0;
 
 void set_mux(bits pins){
@@ -69,45 +71,58 @@ uint read_ADC_MUX(bits pins){
 }
 
 int check_pow(){
-    adc_select_input(ADC_MUX_CHANNEL);
-    uint voltage = read_ADC_MUX(AUX_Voltage);
-    if (voltage > volt_threshold){
-        return 1;
-    }
-    else {
-        return 0;
-    }
+  adc_select_input(ADC_MUX_CHANNEL);
+  uint voltage = read_ADC_MUX(AUX_Voltage);
+  if (voltage > volt_threshold){
+    return 1;
+  }
+  else {
+    return 0;
+  }
 }
 
 void evaluate_state(uint64_t time){
-    bool holder = (bool)check_pow();
-    if (!holder){
-        sd_now.start_time = time_us_64();
-        sd_now.in_process = true;
-    }
-    else if ((time > 10000000) && holder) {
-        current_state = MainRelay;
-    }
-    else if ((time > 20000000) && holder){
-        current_state = MainRelay + CompAndSwitch;
-    }
+  bool holder = (bool)check_pow();
+  if (!holder){
+    sd_now.start_time = time_us_64()-debug_time;
+    sd_now.in_process = true;
+  }
+  else if ((time > 10000000) && holder) {
+    current_state = MainRelay;
+  }
+  else if ((time > 20000000) && holder){
+    current_state = MainRelay | CompAndSwitch;
+  }
 }
 
 void shutdown_process(uint64_t input_time){
-    uint64_t relative_time = input_time - (sd_now.start_time + debug_time);
-    if (relative_time > 20000000){
-        current_state = InitialPower;
-        watchdog_enable(5000,1);
-        //Once this passes to the gpio_puts_masked, this will be end of program.
-        //If it does not shutdown, then a watchdog is enabled
-        //to force a reboot because an error has likely occured. 
-    }
-    else if (relative_time > 11000000){
-        gpio_put(JET_ON,0);
-    }
-    else if (relative_time > 10000000){
-        gpio_put(JET_ON,1);
-    }
+  uint64_t relative_time = input_time - (sd_now.start_time);
+  re_engage.in_process = (bool)check_pow();
+  if (re_engage.start_time == 0&&re_engage.in_process){
+    re_engage.start_time = input_time;
+  } else if (re_engage.start_time!=0&&(!re_engage.in_process)) {
+    re_engage.start_time = 0;
+    sd_now.start_time = input_time;
+    relative_time = input_time - (sd_now.start_time);
+  } 
+  if ((relative_time > 20000000)&&(!re_engage.in_process)){
+    current_state = InitialPower;
+    watchdog_enable(5000,1);
+    //Once this passes to the gpio_puts_masked, this will be end of program.
+    //If it does not shutdown, then a watchdog is enabled
+    //to force a reboot because an error has likely occured. 
+  }
+  else if ((relative_time > 11000000)&&(!re_engage.in_process)){
+    current_state = current_state & ~(1<<JET_ON);
+  }
+  else if ((relative_time > 10000000)&&(!re_engage.in_process)){
+    current_state = current_state | (1<<JET_ON);
+  }
+  //Re-engage protocol
+  if ((relative_time <= 10000000)&&(re_engage.in_process)){
+    sd_now.in_process = false;
+    sd_now.start_time = 0;
+  }
 }
 
 
@@ -132,9 +147,9 @@ void state_enforce(uint32_t encoded_state, uint32_t gpio_pins){
 */
 
 void toggle_pin(int pin){
-    uint32_t pin_mask = (1 << pin);
-    current_state = current_state ^ pin_mask;
-    gpio_put_masked(output_pins,current_state);
+  uint32_t pin_mask = (1 << pin);
+  current_state = current_state ^ pin_mask;
+  gpio_put_masked(output_pins,current_state);
 }
 
 float convt_temp(float temp){
@@ -143,8 +158,8 @@ float convt_temp(float temp){
   //the ambient temperature. 
   //4096 is based on the RPi Pico's 12-bit ADC readings
   float Vc = 10.0/1000.0;
-  float V0 = 400.0/1000.0;
-  temp = temp*(3.3/4096.0);
+  float V0 = 500.0/1000.0;
+  temp = temp*(V_REF/4096.0);
   temp = temp-V0;
   temp = temp/Vc;
   return temp;
@@ -227,18 +242,32 @@ void parser(int input_char){
     case 75:
       debug.in_process = false;
       sd_now.in_process = true;
-    break;
+      break;
     //"V" reads voltage of input from ADC mux
     case 86:
     {
-      uint voltage = read_ADC_MUX(AUX_Voltage);
-      printf("%d\n",voltage);
+      int holder = getchar_timeout_us(5000000);
+      if (holder == PICO_ERROR_TIMEOUT){
+        uint voltage = read_ADC_MUX(AUX_Voltage);
+        printf("%d\n",voltage);
+      }
+      else{
+        if ((holder >= 48)&&(holder <= 57)){
+          holder -= 48;
+          bits selector = {0,0,0};
+          selector.S2 = ((holder&4) >> 2);
+          selector.S1 = ((holder&2) >> 1);
+          selector.S0 = (holder&1);
+          uint voltage = read_ADC_MUX(selector);
+          printf("MUX Pin %d: %d\n",holder,voltage);
+        }
+      }
     }
     break;
     case 100:
       debug.in_process = false;
-    break;
-  }
+      break;
+    }
   printf("Input \"%c\": done\n", input_char);
 }
 
@@ -252,37 +281,47 @@ uint64_t debug_mode(){
         }
     }
     printf("Exiting debug mode\n");
-    return time_us_64() + debug_time;
+    return time_us_64() - debug_time;
 }
 
 int main(){
-    stdio_init_all();
-    //Found these neat predefined functions in the SDK
-    //for setting pins from a bitmap.
-    gpio_init_mask(all_pins);
-    gpio_set_dir_out_masked(output_pins);
-    gpio_set_dir_in_masked(input_pins);
-    //Configuring ADC input is separate
-    adc_init();
-    adc_gpio_init(ADC_MUX);
-    while (1) {
-        uint64_t time_ref = time_us_64() + debug_time;
-        if (debug.in_process) {
-            printf("Entering debug mode\n");
-            debug.start_time = time_ref;
-            debug_time += debug_mode() - debug.start_time;
-        }
-        if (!sd_now.in_process){
-            evaluate_state(time_ref);
-        }
-        else {
-            shutdown_process(time_ref);
-        }
-        gpio_put_masked(output_pins,current_state);
-        if (getchar_timeout_us(0)==100){
-            debug.in_process = true;
-        }
+  stdio_init_all();
+  //Found these neat predefined functions in the SDK
+  //for setting pins from a bitmap.
+  gpio_init_mask(all_pins);
+  gpio_set_dir_out_masked(output_pins);
+  gpio_set_dir_in_masked(input_pins);
+  //Configuring ADC input is separate
+  adc_init();
+  adc_gpio_init(ADC_MUX);
+  while (1) {
+    uint64_t time_ref = time_us_64() - debug_time;
+    if (debug.in_process) {
+      bool holder = sd_now.in_process; 
+      printf("Entering debug mode\n");
+      debug.start_time = time_ref;
+      debug_time += debug_mode() - debug.start_time;
+      if ((!holder)&&(sd_now.in_process)){
+        sd_now.start_time = time_us_64()-debug_time;
+      }
     }
-    //Code should NEVER go beyond here. If it does, reboot. 
-    watchdog_enable(1,1);
+    if (!sd_now.in_process){
+      evaluate_state(time_ref);
+    }
+    else {
+      shutdown_process(time_ref);
+    }
+    gpio_put_masked(output_pins,current_state);
+    int char_holder = getchar_timeout_us(0);
+    if (char_holder==100){
+      debug.in_process = true;
+    } else if (char_holder == 84){
+      printf("Reference time: %lu\n", (uint32_t)(time_ref&0xffffffff));
+    } else if (char_holder == 82){
+      //This has the effect of resetting time references
+      debug_time = time_us_64();
+    }
+  }
+  //Code should NEVER go beyond here. If it does, reboot. 
+  watchdog_enable(1,1);
 }
