@@ -5,6 +5,9 @@
 #include "hardware/gpio.h"
 #include "hardware/adc.h"
 #include "hardware/watchdog.h"
+#include "math.h"
+
+#define BLINKER_COMPLEXITY 10
 
 #define IN0 7
 #define IN1 10
@@ -34,7 +37,7 @@
 #define CompAndSwitch 0x00000003
 uint32_t current_state = 0;
 uint32_t all_pins = 0x1f7c9c9f;
-uint32_t output_pins = 0x1c7c901f;
+uint32_t output_pins = 0x1e7c901f;
 uint32_t input_pins = 0x04000c80;
 
 int volt_threshold = (1 << 9);
@@ -51,9 +54,22 @@ typedef struct process_monitor{
     uint64_t start_time;
 } monitor;
 monitor sd_now = {false, 0};
+//Time in seconds between cutting power and shutdown sequence start. 
+int shutdown_delay = 10; 
 monitor debug = {false, 0};
 monitor re_engage = {false, 0};
 uint64_t debug_time = 0;
+
+typedef struct blinker{
+  int pulses; 
+  double times[BLINKER_COMPLEXITY];
+  int states[BLINKER_COMPLEXITY];
+  double length;
+} blink_type;
+
+blink_type standard_blink = {1,{0.0,0.5},{1,0},1.0};
+blink_type debug_blink = {2,{0.0,0.15,0.25,0.4},{1,0,1,0},1.0};
+blink_type sd_blink = {1,{0.0,0.5},{1,0},0.2};
 
 void set_mux(bits pins){
   sleep_ms(10);
@@ -97,37 +113,27 @@ void evaluate_state(uint64_t time){
 
 void shutdown_process(uint64_t input_time){
   uint64_t relative_time = input_time - (sd_now.start_time);
+  uint64_t delay_time = (uint64_t)(1000000*shutdown_delay);
   re_engage.in_process = (bool)check_pow();
-  if ((re_engage.start_time == 0)&&re_engage.in_process){
+  if ((re_engage.start_time == 0)&&(re_engage.in_process)){
     re_engage.start_time = input_time;
-  } else if ((re_engage.start_time!=0)&&(!re_engage.in_process)) {
-    re_engage.start_time = 0;
-    sd_now.start_time = input_time;
-    relative_time = input_time - (sd_now.start_time);
-  } 
-  if ((relative_time > 20000000)&&(!re_engage.in_process)){
+  }
+  if ((relative_time > (delay_time + 10000000))&&(!re_engage.in_process)){
     current_state = InitialPower;
-    watchdog_enable(5000,1);
+    watchdog_enable(50,1);
     //Once this passes to the gpio_puts_masked, this will be end of program.
     //If it does not shutdown, then a watchdog is enabled
     //to force a reboot because an error has likely occured. 
   }
-  else if ((relative_time > 11000000)&&(!re_engage.in_process)){
+  else if ((relative_time > (delay_time + 1000000))&&(!re_engage.in_process)){
     current_state = current_state & ~(1<<JET_ON);
   }
-  else if ((relative_time > 10000000)&&(!re_engage.in_process)){
+  else if ((relative_time > delay_time)&&(!re_engage.in_process)){
     current_state = current_state | (1<<JET_ON);
   }
-  //Re-engage protocol
-  if ((relative_time <= 10000000)&&(re_engage.in_process)){
+  else if ((relative_time <= delay_time) && (re_engage.in_process)){
     sd_now.in_process = false;
-    sd_now.start_time = 0;
-  } else if ((relative_time > 15000000)&&(re_engage.in_process)){
-    current_state = current_state & ~(1<<JET_ON);
-    sd_now.in_process = false;
-    sd_now.start_time = 0;
-  } else if ((relative_time > 14000000)&&(re_engage.in_process)){
-    current_state = current_state | (1<<JET_ON);
+    sd_now.start_time = 0; 
   }
 }
 
@@ -277,6 +283,39 @@ void parser(int input_char){
   printf("Input \"%c\": done\n", input_char);
 }
 
+void blink_pattern(){
+  int state_changes;
+  double time = (double)(time_us_64())/1000000.0;
+  double time_in_pulse;
+  blink_type holder;
+  if (debug.in_process){
+    state_changes = debug_blink.pulses * 2;
+    time_in_pulse = time / debug_blink.length;
+    time_in_pulse = (double)(time_in_pulse - (double)floor(time_in_pulse))*debug_blink.length;
+    holder = debug_blink;
+  } 
+  else if (sd_now.in_process){
+    state_changes = sd_blink.pulses *2;
+    time_in_pulse = time / sd_blink.length;
+    time_in_pulse = (double)(time_in_pulse - (double)floor(time_in_pulse))*sd_blink.length;
+    holder = sd_blink;
+  }
+  else {
+    state_changes = standard_blink.pulses * 2;
+    time_in_pulse = time / standard_blink.length;
+    time_in_pulse = (double)(time_in_pulse - (double)floor(time_in_pulse))*standard_blink.length;
+    holder = standard_blink;
+  }
+  for (int i = (state_changes-1); i >=0; i--){
+      //printf("%f   %f   %d   i:%d\n",(holder.times[i]*holder.length),time_in_pulse, holder.states[i],i);
+      if (time_in_pulse > (holder.times[i]*holder.length)){
+        current_state = current_state & (~(1 << BUILT_IN_LED));
+        current_state = current_state | ((holder.states[i]) << BUILT_IN_LED);
+        break;
+      }
+    }
+}
+
 uint64_t debug_mode(){
     printf("Ready!\n");
     while (debug.in_process) {
@@ -285,6 +324,8 @@ uint64_t debug_mode(){
         if (holder != -1){
             parser(holder);
         }
+        blink_pattern();
+        gpio_put_masked(output_pins,current_state);
     }
     printf("Exiting debug mode\n");
     return time_us_64() - debug_time;
@@ -317,6 +358,7 @@ int main(){
     else {
       shutdown_process(time_ref);
     }
+    blink_pattern();
     gpio_put_masked(output_pins,current_state);
     int char_holder = getchar_timeout_us(0);
     if (char_holder==100){

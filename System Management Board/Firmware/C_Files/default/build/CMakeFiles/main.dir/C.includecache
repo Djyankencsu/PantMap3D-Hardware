@@ -21,6 +21,8 @@ hardware/adc.h
 /home/daniel/PSA/Hardware/PantMap3D-Hardware/System Management Board/Firmware/C_Files/default/build/hardware/adc.h
 hardware/watchdog.h
 /home/daniel/PSA/Hardware/PantMap3D-Hardware/System Management Board/Firmware/C_Files/default/build/hardware/watchdog.h
+math.h
+/home/daniel/PSA/Hardware/PantMap3D-Hardware/System Management Board/Firmware/C_Files/default/build/math.h
 
 /home/daniel/PSA/Hardware/pico-sdk/src/boards/include/boards/pico.h
 
