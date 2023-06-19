@@ -31,6 +31,7 @@
 #define BUILT_IN_LED 25
 #define mask 0xffffffe0
 #define V_REF 3.25
+#define PRIORITY_CONST 50000
 
 #define InitialPower 0x00000000
 #define MainRelay 0x00000004
@@ -77,6 +78,11 @@ void set_mux(bits pins){
   gpio_put(MUX_S1,pins.S1);
   gpio_put(MUX_S0,pins.S0);
   sleep_ms(10);
+}
+
+double convt_time(uint64_t time){
+  double millis = (double)time/1000.0;
+  return millis;
 }
 
 uint read_ADC_MUX(bits pins){
@@ -341,7 +347,9 @@ int main(){
   //Configuring ADC input is separate
   adc_init();
   adc_gpio_init(ADC_MUX);
+  bool checked_priority = false;
   while (1) {
+    uint64_t time_holder = time_us_64();
     uint64_t time_ref = time_us_64() - debug_time;
     if (debug.in_process) {
       bool holder = sd_now.in_process; 
@@ -352,11 +360,16 @@ int main(){
         sd_now.start_time = time_us_64()-debug_time;
       }
     }
-    if (!sd_now.in_process){
-      evaluate_state(time_ref);
-    }
-    else {
-      shutdown_process(time_ref);
+    if (((time_ref % PRIORITY_CONST)>(PRIORITY_CONST/2)) && (!checked_priority)){
+      if (!sd_now.in_process){
+        evaluate_state(time_ref);
+      }
+      else {
+        shutdown_process(time_ref);
+      }
+      checked_priority = true;
+    } else if ((time_ref % PRIORITY_CONST)<(PRIORITY_CONST/4)){
+      checked_priority = false;
     }
     blink_pattern();
     gpio_put_masked(output_pins,current_state);
@@ -369,6 +382,8 @@ int main(){
       //This has the effect of resetting time references
       debug_time = time_us_64();
     }
+    time_holder = time_us_64()- time_holder;
+    printf("Whole loop: %f milliseconds\n", convt_time(time_holder));
   }
   //Code should NEVER go beyond here. If it does, reboot. 
   watchdog_enable(1,1);
