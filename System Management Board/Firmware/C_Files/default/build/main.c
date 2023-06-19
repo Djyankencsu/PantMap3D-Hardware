@@ -349,7 +349,6 @@ int main(){
   adc_gpio_init(ADC_MUX);
   bool checked_priority = false;
   while (1) {
-    uint64_t time_holder = time_us_64();
     uint64_t time_ref = time_us_64() - debug_time;
     if (debug.in_process) {
       bool holder = sd_now.in_process; 
@@ -382,8 +381,6 @@ int main(){
       //This has the effect of resetting time references
       debug_time = time_us_64();
     }
-    time_holder = time_us_64()- time_holder;
-    printf("Whole loop: %f milliseconds\n", convt_time(time_holder));
   }
   //Code should NEVER go beyond here. If it does, reboot. 
   watchdog_enable(1,1);
